@@ -43,14 +43,15 @@
         position: absolute;
         top: 1px;
         right: 1px;
-        width: 60%; // регулируй размер подсветки
-        height: 60%;
+        width: 50%; // регулируй размер подсветки
+        height: 50%;
         //background: ;
         border-radius: 32px;
-        border: 1px solid;
+        border: 2px solid;
         border-color: linear-gradient(47.67deg, rgba(255, 255, 255, 0) 67.58%, rgba(255, 255, 255, 0.6) 100.69%);
         z-index: 0;
         opacity: 0.35;
+       
       }
       &::after {
         content: "";
@@ -60,10 +61,11 @@
         width: 50%;
         height: 50%;
         border-radius: 32px;
-        border: 1px solid;
+        border: 2px solid;
         border-color: linear-gradient(227.43deg, rgba(255, 255, 255, 0) 65.44%, rgba(255, 255, 255, 0.6) 100%);
         z-index: 0;
         opacity: 0.35;
+      
       }
   }
   &__tab-nav {
