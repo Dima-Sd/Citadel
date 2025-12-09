@@ -5,6 +5,7 @@
     gap: 10px;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
   }
   &__tab-nav {
     flex: 0 0 265px;
@@ -12,12 +13,23 @@
     height: fit-content;
     padding: 25px;
     border-radius: 32px;
-    border: 1px solid $light;
-    border-image:
-    linear-gradient(47.67deg, rgba(255, 255, 255, 0) 67.58%, rgba(255, 255, 255, 0.6) 100.69%),
-    linear-gradient(227.43deg, rgba(255, 255, 255, 0) 65.44%, rgba(255, 255, 255, 0.6) 100%) 1 stretch;
-
+  
     backdrop-filter: blur(16px);
+    background: linear-gradient(231.87deg, rgba(255, 255, 255, 0.18) -30.13%, rgba(255, 255, 255, 0.03) 57.05%, rgba(255, 255, 255, 0.12) 137.89%);
+
+    position: relative;
+    z-index: 0;
+    &::before {
+      z-index: -1;
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 50%;
+      background: linear-gradient(47.67deg, rgba(255, 255, 255, 0) 67.58%, rgba(255, 255, 255, 0.6) 100.69%);
+      border-radius: 32px;
+      }
     }
   &__tab-nav-title {
     @include RobotoCondensed-600;
@@ -31,10 +43,7 @@
     width: 100%;
   }
 }
-.tabs {
-  &__content {
-  }
-}
+
 .tab {
   &__item {
     display: none;
@@ -99,6 +108,7 @@
 
 
     &--active {
+      color: $light-900;
       &::before,
       &::after {
         position: absolute;
@@ -119,19 +129,19 @@
   }
 }
 
-.terms {
+.terms,
+.privacy,
+.refund,
+.aboutUs {
   &__section {
-    margin-bottom: 30px;
-    &:last-child {
-      margin-bottom: 0;
-    }
+    padding: 15px 0;
   }
   &__main-title {
     @include RobotoCondensed-600;
     font-size: 72px;
     line-height: 1;
     color: $light;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
   &__title {
     @include RobotoCondensed-600;
@@ -140,17 +150,47 @@
     color: $light;
     margin-bottom: 15px;
   }
+  &__subtitle {
+    @include RobotoCondensed-600;
+    font-size: 24px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
   &__text {
     @include Inter-400;
     font-size: 18px;
     line-height: 1;
     color: $light;
+    margin-bottom: 15px;
+    &--down {
+      margin-top: 15px;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
   &__item {
     @include Inter-400;
     font-size: 18px;
     line-height: 1;
     color: $light;
+    padding-left: 38px;
+    position: relative;
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      left: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: $light-900;
+    }
   }
 }
 .terms-link {
