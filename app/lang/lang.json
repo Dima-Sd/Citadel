@@ -1,0 +1,451 @@
+{
+  "en": {
+    "breadcrumbs.link": "Home",
+    "home.tab.navTitle": "Terms and Policy",
+    "tabs.terms": "Terms and Conditions",
+    "tabs.privacy": "Privacy Policy",
+    "tabs.refund": "Refund Policy",
+    "tabs.aboutUs": "About Us",
+
+    "terms.title": "Terms & Conditions",
+
+    "terms.introduction.title": "1. Introduction",
+    "terms.introduction.text1": "Welcome to Citadel VPN! These Terms & Conditions (“Terms”) govern your use of our website, Telegram bot, and VPN services (collectively, the “Services”), which are provided by Citadel VPN (“we”, “us”, or “our”). By registering for or using our Services, you agree to be bound by these Terms in their entirety.",
+    "terms.introduction.text2": "Our <a href='/privacy' class='terms-link'>Privacy Policy</a> is an integral part of these Terms. Please read it carefully.",
+    
+
+    "terms.userAccount.title": "2. User Account",
+    "terms.userAccount.text": "To use our Services, you must create an account through our Telegram bot. You are responsible for maintaining the confidentiality of your account and for all activities that occur under your account. You agree to provide accurate and complete information when creating your account.",
+    "terms.userAccount.text2": "Your account is for your personal use only. Sharing your account with others is strictly prohibited and may result in the termination of your account.",
+
+    "terms.services.title": "3. Services",
+    "terms.services.text": "Citadel VPN provides a virtual private network (VPN) service using the VLESS protocol. We grant you a limited, non-exclusive, revocable license to use our Services in accordance with these Terms.",
+
+    "terms.payments.title": "4. Payments, Subscriptions, and Refunds",
+
+    "terms.payments.subscriptions.title": "4.1. Subscriptions",
+    "terms.payments.subscriptions.text": "Our paid Services are available on a subscription basis. You can choose the subscription period and payment method through our Telegram bot. Subscriptions will automatically renew at the end of each service period unless you cancel the auto-renewal.",
+
+    "terms.payments.renewals.title": "4.2. Renewals",
+    "terms.payments.renewals.text": "We accept payments through various payment processors, including Cryptomus. By providing a payment method, you authorize us to charge you for the selected Services.",
+
+    "terms.payments.refunds.title": "4.3. Refund Policy",
+    "terms.payments.refunds.text1": "We offer a 14-day money-back guarantee for your initial purchase. If you are not satisfied with our Services, you may request a refund within 14 days of your first payment. Refund requests are subject to approval by our support team and are reviewed on a case-by-case basis.",
+    "terms.payments.refunds.text2": "Refunds are not available for payments made with certain prepaid cards or gift cards. For cryptocurrency payments, the refund will be processed in the same cryptocurrency, equivalent to the USD value at the time of purchase. Any transaction fees associated with the refund are your responsibility.",
+
+    "terms.acceptableUse.title": "5. Acceptable Use Policy",
+    "terms.acceptableUse.text": "You agree not to use our Services for any illegal or prohibited activities, including but not limited to:",
+    "terms.acceptableUse.item1": "Sending spam or unsolicited emails.",
+    "terms.acceptableUse.item2": "Engaging in any form of hacking, cracking, or network attacks.",
+    "terms.acceptableUse.item3": "Distributing malware, viruses, or other malicious software.",
+    "terms.acceptableUse.item4": "Infringing on the intellectual property rights of others.",
+    "terms.acceptableUse.item5": "Transmitting or distributing any content that is illegal, abusive, or harassing.",
+    "terms.acceptableUse.item6": "Accessing or distributing child pornography or other illicit materials.",
+    "terms.acceptableUse.downtext": "We rserve the right to terminate accounts that violate this policy without a refund",
+
+    "terms.noLogs.title": "6. No-Logs Policy",
+    "terms.noLogs.text": "We are committed to your privacy. We do not monitor, log, or store any of your online activity, including browsing history, traffic destination, data content, or DNS queries. For more details, please see our <a href='/privacy' class='terms-link'>Privacy Policy</a>.",
+
+    "terms.disclaimer.title": "7. Disclaimer of Warranties",
+    "terms.disclaimer.text": "Our Services are provided on an “as is” and “as available” basis. We do not warrant that our Services will be uninterrupted, error-free, or completely secure. You use our Services at your own risk.",
+
+    "terms.liability.title": "8. Limitation of Liability",
+    "terms.liability.text": "To the fullest extent permitted by law, Citadel VPN shall not be liable for any direct, indirect, incidental, special, or consequential damages arising out of your use of our Services.",
+
+    "terms.general.title": "9. General Terms",
+
+    "terms.general.amendments.title": "9.1. Amendments",
+    "terms.general.amendments.text": "We may amend these Terms at any time by posting the updated version on our website. Your continued use of the Services after any changes constitutes your acceptance of the new Terms.",
+
+    "terms.general.law.title": "9.2. Governing Law",
+    "terms.general.law.text.regular": "These Terms shall be governed by and construed in accordance with the laws of",
+    "terms.general.law.text.bold": "[Your Jurisdiction].",
+
+    "terms.general.contact.title": "9.3. Contact Us",
+    "terms.general.contact.text": "If you have any questions about these Terms, please contact us at <a href='mailto:info@vpncitadel.com' class='terms-link'>info@vpncitadel.com</a>.",
+
+  "privacy.title": "Privacy Policy",
+
+  "privacy.introduction.title": "1. Introduction",
+  "privacy.introduction.text": "Citadel VPN is committed to protecting your privacy. This Privacy Policy explains what information we collect, how we use it, and your rights in relation to it. Our guiding principle is to collect only the minimal data required to operate a world-class VPN service. We are a strict no-logs VPN provider.",
+
+  "privacy.infoWeDoNotCollect.title": "2. Information We Do Not Collect",
+  "privacy.infoWeDoNotCollect.text": "We DO NOT collect, log, or store any of the following:",
+  "privacy.infoWeDoNotCollect.item1": "Your original IP address.",
+  "privacy.infoWeDoNotCollect.item2": "Your outgoing VPN IP address.",
+  "privacy.infoWeDoNotCollect.item3": "Your browsing history.",
+  "privacy.infoWeDoNotCollect.item4": "The destination of your traffic.",
+  "privacy.infoWeDoNotCollect.item5": "The content of your data.",
+  "privacy.infoWeDoNotCollect.item6": "Your DNS queries.",
+
+  "privacy.infoWeCollect.title": "3. Information We Collect",
+  "privacy.infoWeCollect.text": "To provide our Services, we collect the following minimal information:",
+
+  "privacy.infoWeCollect.accountInfo.title": "3.1. Account Information",
+  "privacy.infoWeCollect.accountInfo.item1.bold": "Email Address:",
+  "privacy.infoWeCollect.accountInfo.item1.regular": "We collect your email address to create and manage your account, process payments, and communicate with you.",
+  "privacy.infoWeCollect.accountInfo.item2.bold": "Payment Information:",
+  "privacy.infoWeCollect.accountInfo.item2.regular": "We use third-party payment processors (e.g., Cryptomus) to handle payments. We do not store your full credit card information.",
+
+  "privacy.infoWeCollect.usageStats.title": "3.2. Aggregated Usage Statistics",
+  "privacy.infoWeCollect.usageStats.item1.bold": "Successful Connection:",
+  "privacy.infoWeCollect.usageStats.item1.regular": "We collect information about whether you have successfully established a VPN connection on a particular day (but not a specific time).",
+  "privacy.infoWeCollect.usageStats.item2.bold": "Data Transferred:",
+  "privacy.infoWeCollect.usageStats.item2.regular": "We collect the total amount of data transferred by a given user to ensure fair use and maintain service quality.",
+  "privacy.infoWeCollect.usageStats.note": "This data is aggregated and cannot be used to identify any individual user or their specific activities.",
+
+  "privacy.infoWeCollect.telegramBot.title": "3.3. Telegram Bot",
+  "privacy.infoWeCollect.telegramBot.text.bold": "Our Telegram bot",
+  "privacy.infoWeCollect.telegramBot.text.regular": "may collect your Telegram user ID to associate it with your Citadel VPN account. This is necessary to provide the Service through Telegram.",
+
+  "privacy.howWeUse.title": "4. How We Use Your Information",
+  "privacy.howWeUse.text": "We use the information we collect to:",
+  "privacy.howWeUse.item1": "Provide, operate, and maintain our Services.",
+  "privacy.howWeUse.item2": "Process your payments and manage your subscription.",
+  "privacy.howWeUse.item3": "Communicate with you, including sending service-related updates and responding to your support requests.",
+  "privacy.howWeUse.item4": "Prevent fraud and abuse of our Services.",
+
+  "privacy.protection.title": "5. How We Protect Your Information",
+  "privacy.protection.text": "We implement a variety of security measures to maintain the safety of your personal information. All payment transactions are processed through a gateway provider and are not stored or processed on our servers.",
+
+  "privacy.dataRetention.title": "6. Data Retention",
+  "privacy.dataRetention.text": "We retain your account information for as long as your account is active. You can request the deletion of your account and associated data at any time.",
+
+  "privacy.thirdParty.title": "7. Third-Party Services",
+  "privacy.thirdParty.text": "We use the following third-party services:",
+  "privacy.thirdParty.item1.bold": "Payment Processors:",
+  "privacy.thirdParty.item1.regular": "Cryptomus, Stripe, etc.",
+  "privacy.thirdParty.item2.bold": "Telegram:",
+  "privacy.thirdParty.item2.regular": "Our bot operates on the Telegram platform.",
+  "privacy.thirdParty.note": "We are not responsible for the privacy practices of these third-party services. We encourage you to review their privacy policies.",
+
+  "privacy.rights.title": "8. Your Rights (GDPR & CCPA)",
+  "privacy.rights.text": "You have the right to:",
+  "privacy.rights.item1": "Access the personal data we hold about you.",
+  "privacy.rights.item2": "Request the correction of inaccurate data.",
+  "privacy.rights.item3": "Request the deletion of your personal data.",
+  "privacy.rights.item4": "Object to the processing of your data.",
+  "privacy.rights.contact": "To exercise these rights, please contact us at: <a href='mailto:info@vpncitadel.com' class='terms-link'>info@vpncitadel.com</a>",
+
+  "privacy.children.title": "9. Children's Privacy",
+  "privacy.children.text": "Our Services are not intended for use by anyone under the age of 18. We do not knowingly collect personal information from children.",
+
+  "privacy.changes.title": "10. Changes to This Policy",
+  "privacy.changes.text": "We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on our website.",
+
+  "privacy.contact.title": "11. Contact Us",
+  "privacy.contact.text": "If you have any questions about this Privacy Policy, please contact us at: <a href='mailto:info@vpncitadel.com' class='terms-link'>info@vpncitadel.com</a>",
+
+    "refund.title": "Refund Policy",
+
+  "refund.guarantee.title": "1. 14-Day Money-Back Guarantee",
+  "refund.guarantee.text": "We are committed to your satisfaction. If you are not completely satisfied with our Services, you can request a full refund within 14 days of your initial purchase.",
+
+  "refund.howtoRequest.title": "2. How to Request a Refund",
+  "refund.howtoRequest.text1": "To request a refund, please contact our customer support team at <a href='mailto:info@vpncitadel.com' class='terms-link'>info@vpncitadel.com</a> with your account information and the reason for your request. All refund requests are subject to approval by our support team and are reviewed on a case-by-case basis.",
+
+  "refund.refundProcessing.title": "3. Refund Processing",
+  "refund.refundProcessing.text": "Once your refund request is approved, we will process the refund to your original method of payment. Please allow 5–10 business days for the refund to appear in your account.",
+  "refund.refundProcessing.cryptocurrency": "3.1. Cryptocurrency Refunds",
+  "refund.refundProcessing.cryptocurrency.text": "For payments made with cryptocurrency, the refund will be processed in the same cryptocurrency. The refund amount will be equivalent to the USD value of your purchase at the time of the transaction. Any blockchain transaction fees associated with the refund will be your responsibility.",
+
+  "refund.exclusions.title": "4. Exclusions",
+  "refund.exclusions.item1": "This money-back guarantee applies only to your initial purchase.",
+  "refund.exclusions.item2": "Refunds are not available for subscription renewals.",
+  "refund.exclusions.item3": "Payments made with prepaid cards or gift cards may not be eligible for a refund.",
+  "refund.exclusions.item4": "Accounts terminated for violating our Terms & Conditions are not eligible for a refund.",
+
+  "refund.thirdPartyPurchases.title": "5. Third-Party Purchases",
+  "refund.thirdPartyPurchases.text": "If you purchased your subscription through a third-party platform (e.g., Apple App Store, Google Play Store), you must adhere to that platform's refund policy. We cannot process refunds for purchases made through third parties.",
+
+  "refund.contactUs.title": "6. Contact Us",
+  "refund.contactUs.text": "If you have any questions about our Refund Policy, please contact us at",
+  "refund.contactUs.email": "info@vpncitadel.com",
+
+  "aboutUs.title": "About Us",
+
+  "aboutUs.ourMission.title": "Our Mission: Your Digital Freedom Fortress",
+  "aboutUs.ourMission.text": "In an era where digital surveillance and censorship are on the rise, we believe that everyone has a right to a free and open internet. Our mission is to provide you with a powerful, secure, and easy-to-use tool to protect your online privacy and bypass restrictions. Citadel VPN is your fortress in the digital world.",
+
+  "aboutUs.whoWeAre.title": "Who We Are",
+  "aboutUs.whoWeAre.text": "We are a team of privacy advocates, cybersecurity experts, and technology enthusiasts dedicated to building a better internet. We were founded on the principles of privacy, security, and freedom. We believe that your data is your own, and we are committed to protecting it.",
+
+  "aboutUs.whatWeDo.title": "What We Do",
+  "aboutUs.whatWeDo.text": "<p>Citadel VPN provides a state-of-the-art VPN service built on the modern and efficient VLESS protocol. Our service is designed to be fast, reliable, and secure, allowing you to browse the web without borders.</p> <p>We are a Telegram-first service, offering a seamless and intuitive user experience through our powerful Telegram bot. This allows for quick and easy setup, management of your subscription, and access to our global network of servers.</p>",
+
+  "aboutUs.ourValues.title": "Our Values",
+  "aboutUs.ourValues.item1.bold": "Privacy:",
+  "aboutUs.ourValues.item1.regular": "Your privacy is our top priority. We have a strict no-logs policy, meaning we never track, store, or share your online activity.",
+  "aboutUs.ourValues.item2.bold": "Security:",
+  "aboutUs.ourValues.item2.regular": "We use military-grade encryption and the latest VPN protocols to keep your data safe from prying eyes.",
+  "aboutUs.ourValues.item3.bold": "Freedom:",
+  "aboutUs.ourValues.item3.regular": "We believe in an open internet for everyone. Our service helps you bypass censorship and access the content you want, wherever you are.",
+  "aboutUs.ourValues.item4.bold": "Transparency:",
+  "aboutUs.ourValues.item4.regular": "We are committed to being open and honest with our users. We believe that trust is earned through transparency.",
+
+  "aboutUs.whyChoose.title": "Why Choose Citadel VPN?",
+  "aboutUs.whyChoose.item1.bold": "Modern Technology:",
+  "aboutUs.whyChoose.item1.regular": "We use the VLESS protocol, which is designed for performance and security.",
+  "aboutUs.whyChoose.item2.bold": "Telegram-First:",
+  "aboutUs.whyChoose.item2.regular": "Manage your VPN directly from Telegram, one of the world's most popular and secure messaging apps.",
+  "aboutUs.whyChoose.item3.bold": "Global Network:",
+  "aboutUs.whyChoose.item3.regular": "Access our network of high-speed servers in locations around the world.",
+  "aboutUs.whyChoose.item4.bold": "No-Logs Policy:",
+  "aboutUs.whyChoose.item4.regular": "We never log your activity. Your privacy is guaranteed.",
+  "aboutUs.whyChoose.item5.bold": "24/7 Support:",
+  "aboutUs.whyChoose.item5.regular": "Our dedicated support team is always here to help you.",
+
+  "aboutUs.joinUs.title": "Join Us",
+  "aboutUs.joinUs.text1": "Take control of your digital life. Join the Citadel VPN community and experience the internet without borders.",
+  "aboutUs.joinUs.text2": "Contact Us: <a href='/privacy' class='terms-link'>Privacy Policy</a>"
+  },
+
+  "ru": {
+    "breadcrumbs.link": "Домашняя",
+    "home.tab.navTitle": "Условия и политика",
+    "tabs.terms": "Правила и условия",
+    "tabs.privacy": "Политика конфиденциальности",
+    "tabs.refund": "Политика возврата",
+    "tabs.aboutUs": "О нас",
+
+    "terms.title": "Условия и положения",
+
+    "terms.introduction.title": "1. Введение",
+    "terms.introduction.text1": "Добро пожаловать в Citadel VPN! Настоящие Условия и положения («Условия») регулируют использование вами нашего веб-сайта, бота Telegram и услуг VPN (совместно именуемых «Услуги»), которые предоставляются Citadel VPN («мы», «нас» или «наш»). Регистрируясь или используя наши Услуги, вы соглашаетесь соблюдать настоящие Условия в полном объеме.",
+    "terms.introduction.text2": "Наша <a href='/privacy' class='terms-link'>Политика Конфиденциальности</a> является неотъемлемой частью настоящих Условий. Пожалуйста, внимательно ознакомьтесь с ней.",
+    
+
+    "terms.userAccount.title": "2. Аккаунт Пользователя",
+    "terms.userAccount.text": "Чтобы воспользоваться нашими Услугами, вы должны создать учетную запись через нашего бота в Telegram. Вы несете ответственность за сохранение конфиденциальности своей учетной записи и за все действия, совершаемые под вашей учетной записью. Вы соглашаетесь предоставить точную и полную информацию при создании своей учетной записи.",
+    "terms.userAccount.text2": "Ваша учетная запись предназначена исключительно для личного использования. Совместное использование вашей учетной записи с другими лицами строго запрещено и может привести к ее закрытию.",
+
+    "terms.services.title": "3. Услуги",
+    "terms.services.text": "Citadel VPN предоставляет услуги виртуальной частной сети (VPN) с использованием протокола VLESS. Мы предоставляем вам ограниченную, неисключительную, отзывную лицензию на использование наших Услуг в соответствии с настоящими Условиями.",
+
+    "terms.payments.title": "4. Платежи, подписки и возмещения",
+
+    "terms.payments.subscriptions.title": "4.1. Подписки",
+    "terms.payments.subscriptions.text": "Наши платные услуги доступны на основе подписки. Вы можете выбрать период подписки и способ оплаты через нашего бота в Telegram. Подписки будут автоматически продлеваться в конце каждого периода обслуживания, если вы не отмените автоматическое продление.",
+
+    "terms.payments.renewals.title": "4.2. Продление",
+    "terms.payments.renewals.text": "Мы принимаем платежи через различные платежные системы, включая Cryptomus. Предоставляя способ оплаты, вы разрешаете нам взимать с вас плату за выбранные Услуги.",
+
+    "terms.payments.refunds.title": "4.3. Политика возврата",
+    "terms.payments.refunds.text1": "Мы предлагаем 14-дневную гарантию возврата денег за вашу первоначальную покупку. Если вы не удовлетворены нашими Услугами, вы можете запросить возврат денег в течение 14 дней с момента вашего первого платежа. Запросы на возврат денег подлежат утверждению нашей службой поддержки и рассматриваются в индивидуальном порядке.",
+    "terms.payments.refunds.text2": "Возврат средств не производится за платежи, совершенные с помощью определенных предоплаченных карт или подарочных карт. В случае платежей в криптовалюте возврат средств будет произведен в той же криптовалюте в сумме, эквивалентной стоимости в долларах США на момент покупки. Все комиссии за транзакции, связанные с возвратом средств, несет покупатель.",
+
+    "terms.acceptableUse.title": "5. Политика использования",
+    "terms.acceptableUse.text": "Вы соглашаетесь не использовать наши Услуги для любых незаконных или запрещенных действий, включая, но не ограничиваясь:",
+    "terms.acceptableUse.item1": "Рассылка спама или нежелательных электронных писем.",
+    "terms.acceptableUse.item2": "Участие в любой форме хакинга, взлома или сетевых атак.",
+    "terms.acceptableUse.item3": "Распространение вредоносных программ, вирусов или другого вредоносного программного обеспечения.",
+    "terms.acceptableUse.item4": "Нарушение прав интеллектуальной собственности других лиц.",
+    "terms.acceptableUse.item5": "Передача или распространение любого контента, который является незаконным, оскорбительным или преследовательным.",
+    "terms.acceptableUse.item6": "Доступ к детской порнографии или другим незаконным материалам или их распространение.",
+    "terms.acceptableUse.downtext": "Мы оставляем за собой право закрыть учетные записи, нарушающие данную политику, без возмещения средств.",
+
+    "terms.noLogs.title": "6. Политика отсутствия логов",
+    "terms.noLogs.text": "Мы обязуемся защищать вашу конфиденциальность. Мы не отслеживаем, не регистрируем и не храним никакую информацию о вашей онлайн-активности, включая историю просмотров, назначение трафика, содержание данных или DNS-запросы. Для получения более подробной информации, пожалуйста, ознакомьтесь с нашей <a href='/privacy' class='terms-link'>Политика конфиденциальности</a>.",
+
+    "terms.disclaimer.title": "7. Отказ от гарантий",
+    "terms.disclaimer.text": "Наши Услуги предоставляются на условиях «как есть» и «по мере доступности». Мы не гарантируем, что наши Услуги будут предоставляться бесперебойно, без ошибок или будут полностью безопасными. Вы используете наши Услуги на свой страх и риск.",
+
+    "terms.liability.title": "8. Ограничение ответственности",
+    "terms.liability.text": "В максимальной степени, разрешенной законом, Citadel VPN не несет ответственности за любые прямые, косвенные, случайные, специальные или последующие убытки, возникшие в результате использования вами наших Услуг.",
+
+    "terms.general.title": "9. Общие условия",
+
+    "terms.general.amendments.title": "9.1. Поправки",
+    "terms.general.amendments.text": "Мы можем вносить изменения в настоящие Условия в любое время, разместив обновленную версию на нашем веб-сайте. Продолжение использования Услуг после внесения каких-либо изменений означает ваше согласие с новыми Условиями.",
+
+    "terms.general.law.title": "9.2. Применимое право",
+    "terms.general.law.text.regular": "Настоящие Условия регулируются и толкуются в соответствии с законодательством",
+    "terms.general.law.text.bold": "[Ваша юрисдикция].",
+
+    "terms.general.contact.title": "9.3. Свяжитесь с нами",
+    "terms.general.contact.text": "Если у вас есть какие-либо вопросы по поводу настоящих Условий, пожалуйста, свяжитесь с нами по адресу <a href='mailto:info@vpncitadel.com' class='terms-link'>info@vpncitadel.com</a>.",
+
+     "privacy.title": "Политика конфиденциальности",
+
+  "privacy.introduction.title": "1. Введение",
+  "privacy.introduction.text": "Citadel VPN обязуется защищать вашу конфиденциальность. В настоящей Политике конфиденциальности объясняется, какую информацию мы собираем, как мы ее используем и каковы ваши права в отношении этой информации. Наш руководящий принцип заключается в сборе только минимального объема данных, необходимого для работы VPN-сервиса мирового класса. Мы являемся строгим провайдером VPN, не ведущим журналы.",
+
+  "privacy.infoWeDoNotCollect.title": "2. Информация, которую мы не собираем",
+  "privacy.infoWeDoNotCollect.text": "Мы НЕ собираем, не регистрируем и не храним следующую информацию:",
+  "privacy.infoWeDoNotCollect.item1": "Ваш IP-адрес.",
+  "privacy.infoWeDoNotCollect.item2": "Ваш исходящий IP-адрес VPN.",
+  "privacy.infoWeDoNotCollect.item3": "История просмотров",
+  "privacy.infoWeDoNotCollect.item4": "Направление вашего трафика.",
+  "privacy.infoWeDoNotCollect.item5": "Содержание ваших данных.",
+  "privacy.infoWeDoNotCollect.item6": "Ваши DNS-запросы..",
+
+  "privacy.infoWeCollect.title": "3. Какую информацию мы собираем",
+  "privacy.infoWeCollect.text": "Для предоставления наших Услуг мы собираем следующую минимальную информацию:",
+
+  "privacy.infoWeCollect.accountInfo.title": "3.1. Информация об аккаунте",
+  "privacy.infoWeCollect.accountInfo.item1.bold": "Email Адрес:",
+  "privacy.infoWeCollect.accountInfo.item1.regular": "Мы собираем ваш адрес электронной почты для создания и управления вашей учетной записью, обработки платежей и общения с вами.",
+  "privacy.infoWeCollect.accountInfo.item2.bold": "Информация об оплате:",
+  "privacy.infoWeCollect.accountInfo.item2.regular": "Мы используем сторонние платежные системы (например, Cryptomus) для обработки платежей. Мы не храним полную информацию о вашей кредитной карте.",
+
+  "privacy.infoWeCollect.usageStats.title": "3.2. Агрегированная статистика использования",
+  "privacy.infoWeCollect.usageStats.item1.bold": "Успешное подключение:",
+  "privacy.infoWeCollect.usageStats.item1.regular": "Мы собираем информацию о том, удалось ли вам установить VPN-соединение в определенный день (но не в определенное время).",
+  "privacy.infoWeCollect.usageStats.item2.bold": "Передача данных:",
+  "privacy.infoWeCollect.usageStats.item2.regular": "Мы собираем общий объем данных, переданных данным пользователем, чтобы обеспечить справедливое использование и поддерживать качество обслуживания.",
+  "privacy.infoWeCollect.usageStats.note": "Эти данные являются обобщенными и не могут быть использованы для идентификации отдельных пользователей или их конкретных действий.",
+
+  "privacy.infoWeCollect.telegramBot.title": "3.3. Telegram Бот",
+  "privacy.infoWeCollect.telegramBot.text.bold": "Наш бот в Telegram",
+  "privacy.infoWeCollect.telegramBot.text.regular": "может собирать ваш идентификатор пользователя Telegram, чтобы связать его с вашей учетной записью Citadel VPN. Это необходимо для предоставления Услуги через Telegram.",
+
+  "privacy.howWeUse.title": "4. Как мы используем вашу информацию",
+  "privacy.howWeUse.text": "Мы используем собираемую информацию для следующих целей:",
+  "privacy.howWeUse.item1": "Предоставление, эксплуатация и обслуживание наших Услуг.",
+  "privacy.howWeUse.item2": "Обрабатывайте платежи и управляйте подпиской.",
+  "privacy.howWeUse.item3": "Общаться с вами, в том числе отправлять обновления, связанные с обслуживанием, и отвечать на ваши запросы в службу поддержки.",
+  "privacy.howWeUse.item4": "Предотвращение мошенничества и злоупотребления нашими Услугами.",
+
+  "privacy.protection.title": "5. Как мы защищаем вашу информацию",
+  "privacy.protection.text": "Мы применяем различные меры безопасности для обеспечения безопасности вашей личной информации. Все платежные операции обрабатываются через шлюзового провайдера и не хранятся и не обрабатываются на наших серверах.",
+
+  "privacy.dataRetention.title": "6. Хранение данных",
+  "privacy.dataRetention.text": "Мы храним информацию о вашей учетной записи до тех пор, пока она активна. Вы можете в любое время запросить удаление своей учетной записи и связанных с ней данных.",
+
+  "privacy.thirdParty.title": "7. Услуги третьих лиц",
+  "privacy.thirdParty.text": "Мы используем следующие сторонние сервисы:",
+  "privacy.thirdParty.item1.bold": "Платежные системы:",
+  "privacy.thirdParty.item1.regular": "Cryptomus, Stripe и др.",
+  "privacy.thirdParty.item2.bold": "Telegram:",
+  "privacy.thirdParty.item2.regular": "Наш бот работает на платформе Telegram.",
+  "privacy.thirdParty.note": "Мы не несем ответственности за политику конфиденциальности этих сторонних сервисов. Мы рекомендуем вам ознакомиться с их политикой конфиденциальности.",
+
+  "privacy.rights.title": "8. Ваши права (GDPR и CCPA)",
+  "privacy.rights.text": "Вы имеете право:",
+  "privacy.rights.item1": "Получить доступ к личным данным, которые мы храним о вас.",
+  "privacy.rights.item2": "Запросить исправление неточных данных.",
+  "privacy.rights.item3": "Запросить удаление своих персональных данных.",
+  "privacy.rights.item4": "Возражать против обработки ваших данных.",
+  "privacy.rights.contact": "Чтобы воспользоваться этими правами, свяжитесь с нами по адресу: <a href='mailto:info@vpncitadel.com' class='terms-link'>info@vpncitadel.com</a>",
+
+  "privacy.children.title": "9. Конфиденциальность детей",
+  "privacy.children.text": "Наши Услуги не предназначены для использования лицами младше 18 лет. Мы сознательно не собираем личную информацию от детей.",
+
+  "privacy.changes.title": "10. Изменения в настоящей Политике",
+  "privacy.changes.text": "Мы можем время от времени обновлять настоящую Политику конфиденциальности. Мы будем уведомлять вас о любых изменениях, публикуя новую политику на нашем веб-сайте.",
+
+  "privacy.contact.title": "11. Свяжитесь с нами",
+  "privacy.contact.text": "Если у вас есть какие-либо вопросы по поводу настоящей Политики конфиденциальности, пожалуйста, свяжитесь с нами по адресу: <a href='mailto:info@vpncitadel.com' class='terms-link'>info@vpncitadel.com</a>",
+
+      "refund.title": "Политика возврата",
+
+  "refund.guarantee.title": "1. 14-дневная гарантия возврата денег",
+  "refund.guarantee.text": "Мы стремимся к вашему удовлетворению. Если вы не полностью удовлетворены нашими Услугами, вы можете запросить полный возврат средств в течение 14 дней с момента первоначальной покупки.",
+
+  "refund.howtoRequest.title": "2. Как запросить возврат средств",
+  "refund.howtoRequest.text1": "Чтобы запросить возврат средств, обратитесь в нашу службу поддержки клиентов по адресу <a href='mailto:info@vpncitadel.com' class='terms-link'>info@vpncitadel.com</a> с информацией о вашей учетной записи и причиной вашего запроса. Все запросы на возврат средств подлежат утверждению нашей службой поддержки и рассматриваются в индивидуальном порядке.",
+
+  "refund.refundProcessing.title": "3. Процесс возврата",
+  "refund.refundProcessing.text": "После утверждения вашего запроса на возврат средств мы обработаем возврат по вашему первоначальному способу оплаты. Возврат средств появится на вашем счете в течение 5–10 рабочих дней.",
+  "refund.refundProcessing.cryptocurrency": "3.1. Возврат криптовалюты",
+  "refund.refundProcessing.cryptocurrency.text": "В случае оплаты криптовалютой возврат будет произведен в той же криптовалюте. Сумма возврата будет эквивалентна стоимости вашей покупки в долларах США на момент совершения транзакции. Все комиссии за транзакции в блокчейне, связанные с возвратом, будут оплачиваться вами.",
+
+  "refund.exclusions.title": "4. Исключения",
+  "refund.exclusions.item1": "Эта гарантия возврата денег распространяется только на вашу первоначальную покупку.",
+  "refund.exclusions.item2": "Возврат средств за продление подписки не производится.",
+  "refund.exclusions.item3": "Платежи, произведенные с помощью предоплаченных карт или подарочных карт, могут не подлежать возврату.",
+  "refund.exclusions.item4": "Счета, закрытые за нарушение наших Условий и положений, не подлежат возмещению.",
+
+  "refund.thirdPartyPurchases.title": "5. Покупки у третьих лиц",
+  "refund.thirdPartyPurchases.text": "Если вы приобрели подписку через стороннюю платформу (например, Apple App Store, Google Play Store), вы должны соблюдать политику возврата средств этой платформы. Мы не можем обрабатывать возврат средств за покупки, совершенные через третьих лиц.",
+
+  "refund.contactUs.title": "6. Свяжитесь с нами",
+  "refund.contactUs.text": "Если у вас есть вопросы о нашей политике возврата, пожалуйста, свяжитесь с нами по адресу",
+  "refund.contactUs.email": "info@vpncitadel.com",
+
+
+    "aboutUs.title": "О нас",
+
+    "aboutUs.ourMission.title": "Наша миссия: ваша крепость цифровой свободы",
+    "aboutUs.ourMission.text": "В эпоху, когда цифровое наблюдение и цензура находятся на подъеме, мы считаем, что каждый имеет право на свободный и открытый Интернет. Наша миссия — предоставить вам мощный, безопасный и простой в использовании инструмент для защиты вашей конфиденциальности в Интернете и обхода ограничений. Citadel VPN — ваша крепость в цифровом мире.",
+
+    "aboutUs.whoWeAre.title": "Кто мы",
+    "aboutUs.whoWeAre.text": "Мы — команда защитников конфиденциальности, экспертов по кибербезопасности и энтузиастов технологий, стремящихся создать лучший Интернет. Наша компания основана на принципах конфиденциальности, безопасности и свободы. Мы считаем, что ваши данные принадлежат вам, и обязуемся их защищать.",
+
+    "aboutUs.whatWeDo.title": "Что мы делаем",
+    "aboutUs.whatWeDo.text": "<p>Citadel VPN предоставляет передовой VPN-сервис, построенный на современном и эффективном протоколе VLESS. Наш сервис разработан так, чтобы быть быстрым, надежным и безопасным, позволяя вам просматривать веб-страницы без границ.</p> <p>Мы являемся сервисом, ориентированным в первую очередь на Telegram, и предлагаем удобный и интуитивно понятный интерфейс благодаря нашему мощному боту Telegram. Это позволяет быстро и легко настроить и управлять вашей подпиской, а также получить доступ к нашей глобальной сети серверов.</p>",
+
+    "aboutUs.ourValues.title": "Наши ценности",
+    "aboutUs.ourValues.item1.bold": "Конфиденциальность:",
+    "aboutUs.ourValues.item1.regular": "Ваша конфиденциальность является нашим главным приоритетом. Мы придерживаемся строгой политики отсутствия журналов, что означает, что мы никогда не отслеживаем, не храним и не передаем информацию о вашей онлайн-активности.",
+    "aboutUs.ourValues.item2.bold": "Безопасность:",
+    "aboutUs.ourValues.item2.regular": "Мы используем шифрование военного уровня и новейшие VPN-протоколы, чтобы защитить ваши данные от посторонних глаз.",
+    "aboutUs.ourValues.item3.bold": "Свобода:",
+    "aboutUs.ourValues.item3.regular": "Мы верим в открытый Интернет для всех. Наш сервис поможет вам обойти цензуру и получить доступ к желаемому контенту, где бы вы ни находились.",
+    "aboutUs.ourValues.item4.bold": "Прозрачность:",
+    "aboutUs.ourValues.item4.regular": "Мы стремимся быть открытыми и честными с нашими пользователями. Мы верим, что доверие зарабатывается благодаря прозрачности.",
+
+    "aboutUs.whyChoose.title": "Почему стоит выбрать Citadel VPN?",
+    "aboutUs.whyChoose.item1.bold": "Современные технологии:",
+    "aboutUs.whyChoose.item1.regular": "Мы используем протокол VLESS, который разработан с учетом требований к производительности и безопасности.",
+    "aboutUs.whyChoose.item2.bold": "Сначала в Telegram:",
+    "aboutUs.whyChoose.item2.regular": "Управляйте своим VPN напрямую из Telegram, одного из самых популярных и безопасных мессенджеров в мире.",
+    "aboutUs.whyChoose.item3.bold": "Глобальная сеть:",
+    "aboutUs.whyChoose.item3.regular": "Получите доступ к нашей сети высокоскоростных серверов, расположенных по всему миру.",
+    "aboutUs.whyChoose.item4.bold": "Политика отсутствия лог-файлов:",
+    "aboutUs.whyChoose.item4.regular": "Мы никогда не регистрируем вашу активность. Ваша конфиденциальность гарантирована.",
+    "aboutUs.whyChoose.item5.bold": "Поддержка 24/7:",
+    "aboutUs.whyChoose.item5.regular": "Наша специализированная служба поддержки всегда готова помочь вам.",
+
+    "aboutUs.joinUs.title": "Присоединяйтесь",
+    "aboutUs.joinUs.text1": "Возьмите контроль над своей цифровой жизнью. Присоединяйтесь к сообществу Citadel VPN и наслаждайтесь интернетом без границ.",
+    "aboutUs.joinUs.text2": "Свяжитесь с нами: <a href='/privacy' class='terms-link'>Privacy Policy</a>"
+  },
+
+
+    "ar": {
+    "breadcrumbs.link": "الرئيسية",
+    "home.tab.navTitle": "الشروط والسياسة",
+    "tabs.terms": "الشروط والأحكام",
+    "tabs.privacy": "سياسة الخصوصية",
+    "tabs.refund": "سياسة استرداد الأموال",
+    "tabs.aboutUs": "معلومات عنا",
+
+    "aboutUs.title": "معلومات عنا",
+
+    "aboutUs.ourMission.title": "قلعتنا الرقمية: مهمتنا هي حمايتك",
+    "aboutUs.ourMission.text": "في عصر يتصاعد فيه المراقبة الرقمية والرقابة، نؤمن بأن لكل فرد الحق في إنترنت حر ومفتوح. تتمثل مهمتنا في تزويدك بأداة قوية وآمنة وسهلة الاستخدام لحماية خصوصيتك على الإنترنت وتجاوز القيود. Citadel VPN هي قلعتك في العالم الرقمي.",
+
+    "aboutUs.whoWeAre.title": "من نحن",
+    "aboutUs.whoWeAre.text": "نحن فريق من دعاة الخصوصية وخبراء الأمن السيبراني وعشاق التكنولوجيا المكرسين لبناء إنترنت أفضل. تأسسنا على مبادئ الخصوصية والأمان والحرية. نؤمن بأن بياناتك ملك لك، ونحن ملتزمون بحمايتها.",
+
+    "aboutUs.whatWeDo.title": "ماذا نفعل",
+    "aboutUs.whatWeDo.text": "<p>تقدم سيتادل VPN خدمة VPN متطورة مبنية على بروتوكول VLESS الحديث والفعال. صُممت خدمتنا لتكون سريعة وموثوقة وآمنة، مما يتيح لك تصفح الإنترنت بلا حدود.</p><br /><p>نحن نركز على تيليجرام، ونقدم تجربة مستخدم سلسة وسهلة الاستخدام من خلال بوت تيليجرام القوي. يتيح لك هذا إعدادًا سريعًا وسهلاً، وإدارة اشتراكك، والوصول إلى شبكتنا العالمية من الخوادم.</p>",
+
+    "aboutUs.ourValues.title": "ماذا نفعل",
+    "aboutUs.ourValues.item1.bold": "الخصوصية:",
+    "aboutUs.ourValues.item1.regular": " خصوصيتك هي أولويتنا. نلتزم بسياسة عدم الاحتفاظ بالسجلات، مما يعني أننا لا نتتبع أو نخزن أو نشارك نشاطك على الإنترنت.",
+    "aboutUs.ourValues.item2.bold": "الأمان:",
+    "aboutUs.ourValues.item2.regular": "نستخدم تشفيراً بمستوى عسكري وأحدث بروتوكولات الـ VPN للحفاظ على بياناتك بعيداً عن المتطفلين.",
+    "aboutUs.ourValues.item3.bold": "الحرية:",
+    "aboutUs.ourValues.item3.regular": "نؤمن بإنترنت مفتوح للجميع. تساعدك خدمتنا على تجاوز الرقابة والوصول إلى المحتوى الذي تريده أينما كنت.",
+    "aboutUs.ourValues.item4.bold": "الشفافية:",
+    "aboutUs.ourValues.item4.regular": "نحن ملتزمون بالانفتاح والصدق مع مستخدمينا. نؤمن بأن الثقة تُكتسب عبر الشفافية.",
+
+    "aboutUs.whyChoose.title": "لماذا تختار Citadel VPN؟",
+    "aboutUs.whyChoose.item1.bold": "تكنولوجيا حديثة:",
+    "aboutUs.whyChoose.item1.regular": "نستخدم بروتوكول VLESS المصمم للأداء والأمان.",
+    "aboutUs.whyChoose.item2.bold": "يعتمد على Telegram:",
+    "aboutUs.whyChoose.item2.regular": "يمكنك إدارة الـ VPN مباشرة من Telegram، أحد أشهر وأكثر تطبيقات المراسلة أماناً في العالم.",
+    "aboutUs.whyChoose.item3.bold": "شبكة عالمية: ",
+    "aboutUs.whyChoose.item3.regular": "الوصول إلى شبكتنا من الخوادم عالية السرعة حول العالم.",
+    "aboutUs.whyChoose.item4.bold": "سياسة عدم الاحتفاظ بالسجلات:",
+    "aboutUs.whyChoose.item4.regular": "لا نقوم أبداً بتسجيل نشاطك. خصوصيتك مضمونة.",
+    "aboutUs.whyChoose.item5.bold": "دعم على مدار الساعة:",
+    "aboutUs.whyChoose.item5.regular": "فريق الدعم الخاص بنا جاهز دائماً لمساعدتك.",
+
+    "aboutUs.joinUs.title": "انضم إلينا",
+    "aboutUs.joinUs.text1": "تحكّم في حياتك الرقمية. انضم إلى مجتمع Citadel VPN واختبر الإنترنت بلا حدود.",
+    "aboutUs.joinUs.text2": "تواصل معنا: <a href='/privacy' class='terms-link'>Privacy Policy</a>"
+  }
+}
