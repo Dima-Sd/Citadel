@@ -144,7 +144,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-
   &__btn {
     @include Inter-400;
     color: $light;
@@ -157,7 +156,6 @@
     width: 100%;
     text-align: left;
     transition: all .3s;
-
     &:hover {
       color: $light-900;
 
@@ -171,9 +169,11 @@
     }
 
     &:active {
-      border-bottom: 1px solid $light-900;
-      width: fit-content;
       color: $light-900;
+      span {
+        border-bottom: 1px solid $light-900;
+        width: 100%;
+      }
     }
     &:focus {
       filter: drop-shadow(#3DDC84 3px 3px 10px);
