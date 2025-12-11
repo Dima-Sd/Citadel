@@ -24,33 +24,79 @@
 <body>
   <header class="header">
     <div class="container">
-      <ul class="menu">
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            يدعم
+      
+      <nav class="menu">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img src="../images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
           </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            التسعير
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                يدعم
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                التسعير
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                سمات
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                مدونة
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">
+                أخبار
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="user-menu">
+          <div class="switcher-lang blur-plate">
+            <a class="switcher-lang__link blur-plate" href="/terms-and-conditions.html">
+              <div class="switcher-lang__box">
+                <svg width="24" height="24">
+                  <use href="../images/sprite.svg#en">
+                  </use>
+                </svg>
+                En
+              </div>
+              <svg class="icon" width="11" height="6">
+                <use href="../images/sprite.svg#arrowBottom">
+                </use>
+              </svg>
+            </a>
+             <!-- <a class="switcher-lang__link blur-plate" href="../ar/terms-and-conditions.html">
+                  <svg width="24" height="24">
+                      <use href="../images/sprite.svg#ar">
+                      </use>
+                  </svg>
+                  عر
+              </a>
+              <a class="switcher-lang__link blur-plate" href="../ru/terms-and-conditions.html">
+                  <svg width="24" height="24">
+                      <use href="../images/sprite.svg#ru">
+                      </use>
+                  </svg>
+                  Ру
+              </a> -->
+          </div>
+          <a class="cta user-menu__cta" href="#">
+            Open VPN
+            <svg class="icon" width="24" height="24">
+              <use href="../images/sprite.svg#telegram">
+              </use>
+            </svg>
           </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            سمات
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            مدونة
-          </a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#">
-            أخبار
-          </a>
-        </li>
-      </ul>
+        </div>
+      </nav>
     </div>
   </header>
   <main class="main">
