@@ -160,16 +160,6 @@
 
     &:hover {
       color: $light-900;
-      &::before,
-      &::after {
-        position: absolute;
-        content: '';
-        height: 100%;
-        width: 4px;
-        background-color: $light-900;
-        top: 50%;
-        transform: translateY(-50%);
-      }
 
       &::before {
         left: -25px;
@@ -181,7 +171,8 @@
     }
 
     &:active {
-      text-decoration: underline;
+      border-bottom: 1px solid $light-900;
+      width: fit-content;
       color: $light-900;
     }
     &:focus {
