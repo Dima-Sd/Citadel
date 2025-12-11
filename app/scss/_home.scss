@@ -59,9 +59,6 @@
 }
 
 .home {
-  background: linear-gradient(180deg, rgba(13, 27, 42, 0) 0%, #0D1B2A 100%);
-  z-index: 0;
-
   &::before {
     position: absolute;
     content: "";
