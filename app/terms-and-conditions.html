@@ -18,80 +18,86 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="../css/style.min.css">
 </head>
 
-<body data-page="services">
-  <header class="header" id="header" data-i18n-section="header">
-    <div class="container">
-      <nav class="menu">
-        <div class="header__inner">
-          <a class="logo" href="#">
-            <img src="./images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
-          </a>
-          <ul class="menu">
-            <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_features" data-scroll>
-                Features
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_pricing" data-scroll>
-                Pricing
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_support" data-scroll>
-                Support
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_blog" data-scroll>
-                Blog
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_news" data-scroll>
-                News
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="user-menu">
-          <div class="switcher-lang">
-            <a class="switcher-lang__link" href="#" data-lang="en">
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="menu">
+      <div class="header__inner">
+        <a class="logo" href="#">
+          <img src="./images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
+        </a>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Features
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Pricing
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Support
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              Blog
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">
+              News
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="user-menu">
+        <div class="switcher-lang blur-plate">
+          <a class="switcher-lang__link" href="#">
+            <div class="switcher-lang__box">
               <svg width="24" height="24">
                 <use href="./images/sprite.svg#en">
                 </use>
               </svg>
               En
-            </a>
-            <a class="switcher-lang__link" href="#" data-lang="ar">
-              <svg width="24" height="24">
-                <use href="./images/sprite.svg#ar">
-                </use>
-              </svg>
-              عر
-            </a>
-            <a class="switcher-lang__link" href="#" data-lang="ru">
-              <svg width="24" height="24">
-                <use href="./images/sprite.svg#ru">
-                </use>
-              </svg>
-              Ру
-            </a>
-          </div>
-          <a class="cta user-menu__cta" href="#">
-            Open VPN
-            <svg width="24" height="24">
-              <use href="./images/sprite.svg#telegram">
+            </div>
+            <svg class="icon" width="11" height="6">
+              <use href="./images/sprite.svg#arrowBottom">
               </use>
             </svg>
           </a>
+          <!-- <a class="switcher-lang__link" href="#">
+                <svg width="24" height="24">
+                    <use href="./images/sprite.svg#ar">
+                    </use>
+                </svg>
+                عر
+            </a>
+            <a class="switcher-lang__link" href="#">
+                <svg width="24" height="24">
+                    <use href="./images/sprite.svg#ru">
+                    </use>
+                </svg>
+                Ру
+            </a> -->
         </div>
-      </nav>
-    </div>
-  </header>
+        <a class="cta user-menu__cta" href="#">
+          Open VPN
+          <svg class="icon" width="24" height="24">
+            <use href="./images/sprite.svg#telegram">
+            </use>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
   <main class="main">
 
     <section class="home">
@@ -117,23 +123,23 @@
           <div class="home__tab-nav">
             <h1 class="home__tab-nav-title" data-i18n="home.tab.navTitle">Terms and Policy</h1>
             <div class="tab-nav">
-              <button class="tab-nav__btn tab-nav__btn--active" type="button" data-btn="btn_1" data-i18n="tabs.terms">
+              <a class="tab-nav__btn tab-nav__btn--active" href="./terms-and-conditions.html">
                 Terms and Conditions
-              </button>
-              <button class="tab-nav__btn" type="button" data-btn="btn_2" data-i18n="tabs.privacy">
+              </a>
+              <a class="tab-nav__btn" href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">
                 Privacy Policy
-              </button>
-              <button class="tab-nav__btn" type="button" data-btn="btn_3" data-i18n="tabs.refund">
+              </a>
+              <a class="tab-nav__btn" href="./refund-policy.html" target="_blank" rel="noopener noreferrer">
                 Refund Policy
-              </button>
-              <button class="tab-nav__btn" type="button" data-btn="btn_4" data-i18n="tabs.aboutUs">
+              </a>
+              <a class="tab-nav__btn" href="./about-us.html" target="_blank" rel="noopener noreferrer">
                 About Us
-              </button>
+              </a>
             </div>
           </div>
           <div class="home__tabs-content tab">
             <!-- Terms & Conditions -->
-            <div class="tab__item tab__item--active" id="btn_1">
+            <div class="tab__item tab__item--active">
               <div class="tab__inner">
                 <div class="terms">
                   <h2 class="terms__main-title" data-i18n="terms.title">Terms & Conditions</h2>
@@ -351,7 +357,6 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>

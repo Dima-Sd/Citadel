@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -18,11 +18,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="stylesheet" href="../css/style.min.css">
 </head>
 
 <body data-page="services">
-  <header class="header" id="header" data-i18n-section="header">
+  <header class="header">
     <div class="container">
       <nav class="menu">
         <div class="header__inner">
@@ -31,59 +31,65 @@
           </a>
           <ul class="menu">
             <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_features" data-scroll>
+              <a class="menu__link" href="#">
                 Features
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_pricing" data-scroll>
+              <a class="menu__link" href="#">
                 Pricing
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_support" data-scroll>
+              <a class="menu__link" href="#">
                 Support
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_blog" data-scroll>
+              <a class="menu__link" href="#">
                 Blog
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#" data-i18n="nav_news" data-scroll>
+              <a class="menu__link" href="#">
                 News
               </a>
             </li>
           </ul>
         </div>
         <div class="user-menu">
-          <div class="switcher-lang">
-            <a class="switcher-lang__link" href="#" data-lang="en">
-              <svg width="24" height="24">
-                <use href="./images/sprite.svg#en">
-                </use>
-              </svg>
-              En
-            </a>
-            <a class="switcher-lang__link" href="#" data-lang="ar">
-              <svg width="24" height="24">
-                <use href="./images/sprite.svg#ar">
-                </use>
-              </svg>
-              عر
-            </a>
-            <a class="switcher-lang__link" href="#" data-lang="ru">
-              <svg width="24" height="24">
-                <use href="./images/sprite.svg#ru">
-                </use>
-              </svg>
-              Ру
-            </a>
-          </div>
+          @@include('../components/switcherLang.html')
           <a class="cta user-menu__cta" href="#">
-            Open VPN
-            <svg width="24" height="24">
+            <div class="switcher-lang blur-plate">
+              <a class="switcher-lang__link" href="#">
+                <div class="switcher-lang__box">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#en">
+                    </use>
+                  </svg>
+                  En
+                </div>
+                <svg class="icon" width="11" height="6">
+                  <use href="./images/sprite.svg#arrowBottom">
+                  </use>
+                </svg>
+              </a>
+              <!-- <a class="switcher-lang__link" href="#">
+                    <svg width="24" height="24">
+                        <use href="./images/sprite.svg#ar">
+                        </use>
+                    </svg>
+                    عر
+                </a>
+                <a class="switcher-lang__link" href="#">
+                    <svg width="24" height="24">
+                        <use href="./images/sprite.svg#ru">
+                        </use>
+                    </svg>
+                    Ру
+                </a> -->
+            </div>
+            <svg class="icon" width="24" height="24">
               <use href="./images/sprite.svg#telegram">
               </use>
             </svg>
