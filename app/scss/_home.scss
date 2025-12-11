@@ -108,13 +108,6 @@
 }
 
 .tab {
-  &__item {
-    display: none;
-
-    &--active {
-      display: block;
-    }
-  }
 
   &__inner {
     display: flex;
