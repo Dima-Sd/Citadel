@@ -8,6 +8,12 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
+
+        &:hover {
+            .faq__subtitle {
+                color: $light-900;
+            }
+        }
     }
 
     &__item:not(:last-child) {
@@ -35,13 +41,24 @@
         height: 100%;
         top: 0;
         left: 0;
+        border-radius: 32px;
+        transition: outline 0.3s, box-shadow 0.3s;
+
+        &:focus {
+            box-shadow: 0 -6px 10px $light-opacity-23 inset,
+                0 0 16px $light-900-opacity-75;
+        }
+
+        &:active {
+            outline: 1px solid $light-900;
+        }
     }
 
     &__subtitle {
         font-size: 24px;
         font-weight: 600;
         font-family: "Roboto Condensed", sans-serif;
-        transition: margin-bottom 0.3s;
+        transition: margin-bottom 0.3s, color 0.3s;
     }
 
     &__answer {
