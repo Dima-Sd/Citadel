@@ -57,10 +57,23 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
+
+        &:hover {
+            color: $light-900;
+        }
+
+        &:focus {
+            box-shadow: 0 0 16px $light-900;
+        }
     }
 
     &__link.blur-plate {
         padding: 12px 50px;
         background: linear-gradient(198.87deg, rgba(255, 255, 255, 0.18) -160.13%, rgba(254, 255, 255, 0.03) 72.05%, rgba(255, 255, 255, 0.12) 207.89%);
+
+        &:active {
+            transform: scale(0.9);
+        }
     }
 }

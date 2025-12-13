@@ -25,6 +25,7 @@
         padding: 16px 16px 16px 24px;
 
         &::after {
+            padding: 1px;
             border-radius: 32px;
             background: linear-gradient(4.35deg, rgba(61, 220, 132, 0) 60.32%, #3DDC84 94.79%), linear-gradient(183.43deg, rgba(255, 255, 255, 0) 65.44%, rgba(255, 255, 255, 0.6) 100%)
         }

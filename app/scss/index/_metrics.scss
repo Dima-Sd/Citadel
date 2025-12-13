@@ -1,0 +1,204 @@
+.metrics {
+  text-align: center;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__badge {
+    order: -1;
+    display: flex;
+    align-self: center;
+    @include Inter-700;
+    font-size: 14px;
+    gap: 9px;
+    align-items: center;
+    padding: 6px 14px 6px 12px;
+    margin-bottom: 16px;
+
+    &.blur-plate {
+      &::after {
+        background: linear-gradient(10.35deg, rgba(255, 255, 255, 0) 60.32%, $light 94.79%), linear-gradient(200.43deg, rgba(255, 255, 255, 0) 65.44%, rgba(255, 255, 255, 0.6) 100%);
+      }
+    }
+  }
+
+  &__title {
+    @include RobotoCondensed-600;
+    font-size: 56px;
+    display: block;
+    margin: 0 auto 32px auto;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  &__item {
+    max-width: 108px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  &__item-title {
+    @include RobotoCondensed-600;
+    font-size: 28px;
+    color: $light-900;
+  }
+
+  &__item-subtitle {
+    @include Inter-400;
+    font-size: 16px;
+    color: $light;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.metric-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.blur-plate {
+    padding: 0;
+    border-radius: 50%;
+
+    &::after {
+      border-radius: 50%;
+    }
+  }
+
+  &--upload,
+  &--latency {
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+  }
+
+  &--download {
+    max-width: 364px;
+    width: 100%;
+    height: 364px;
+  }
+
+  &__circle {
+    aspect-ratio: 1 / 1;
+    position: relative;
+  }
+
+  .progress-ring {
+
+    &__bg {
+      fill: rgba(255, 255, 255, 0.2);
+    }
+
+    &__value {
+      fill: $light-900;
+      stroke-dasharray: 1000; // подбирается
+      stroke-dashoffset: 1000;
+      transition: stroke-dashoffset .8s ease;
+    }
+  }
+
+  &__label {
+    @include Inter-400;
+    color: $light;
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+
+  &__info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__icon.blur-plate {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 16px;
+  }
+
+  &__icon--download.blur-plate {
+    width: 72px;
+    height: 72px;
+  }
+
+  &__value {
+    @include RobotoCondensed-600;
+    font-size: 24px;
+    color: $light-900;
+    margin-bottom: 6px;
+  }
+
+  &__value--upload {
+    font-size: 36px;
+  }
+
+  &__note {
+    @include Inter-400;
+    font-size: 14px;
+    color: $light;
+    opacity: 0.6;
+  }
+}
+
+
+.circle {
+  position: relative;
+  width: 332px;
+  height: 332px;
+  background: transparent;
+}
+
+.svg1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#circ {
+  fill: none;
+  stroke: $light-900;
+  stroke-width: 8;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+}
+
+#circ:hover {
+  animation: progress 5s linear forwards;
+}
+
+@keyframes progress {
+  100% {
+    stroke-dashoffset: -1000;
+  }
+}
