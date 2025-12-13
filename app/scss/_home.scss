@@ -294,23 +294,21 @@
   color: $light-900;
   font-size: 18px;
   position: relative;
-  padding-bottom: 1px;
-  padding-left: 2px;
-
-  &::before {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $light-900;
+  padding: 6px 6px 3px 6px;
+  border-radius: 6px;
+  text-decoration: underline;
+  &:hover {
+    background: #132436;
   }
   &:active {
-    opacity: .7;
+   color: #0D783D;
   }
   &:focus {
     filter: drop-shadow(#3DDC84 3px 3px 10px);
+  }
+  &:visited {
+    background: transparent;
+    color: #0D783D;
   }
 }
 
