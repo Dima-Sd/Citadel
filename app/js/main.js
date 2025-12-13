@@ -42,4 +42,62 @@ addEventListener('DOMContentLoaded', function () {
             arrow.style.transform = "rotate(0deg)";
         });
     });
+
+
+
+    const startAddonNumber = (elements)=> {
+      const time = 2000;  // Общее время анимации в миллисекундах
+        
+        elements.forEach(item => {
+              const targetValue = item.dataset.countNum; // строка
+              const num = parseFloat(targetValue);
+
+              // есть ли дробная часть
+              const hasDecimal = targetValue.includes('.');
+              const decimals = hasDecimal ? targetValue.split('.')[1].length : 0;
+
+              let startTime = null;
+
+            const updateNumber = (timestamp) => {
+              if (!startTime) startTime = timestamp;
+
+              const progress = Math.min((timestamp - startTime) / time, 1);
+              const currentValue = num * progress;
+
+              item.textContent = hasDecimal
+                ? currentValue.toFixed(decimals)
+                : Math.floor(currentValue);
+
+              if (progress < 1) {
+                requestAnimationFrame(updateNumber);
+              }
+            };
+
+            requestAnimationFrame(updateNumber);
+        });
+    }
+
+    const addonElement = document.querySelector('.metrics'); 
+  if (addonElement) { 
+    const observer = new IntersectionObserver((entries, observer) => { 
+      entries.forEach(entry => { 
+
+      if (entry.isIntersecting) { 
+          const elements = document.querySelectorAll('[data-activeNum]'); 
+          startAddonNumber(elements); 
+          observer.disconnect(); // Отключаем после первого срабатывания 
+         }
+     });
+
+     }, { threshold: 0.5 }); 
+     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
+    
+  }
+
+    
+
+   
+
+
+
 });
