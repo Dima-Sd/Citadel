@@ -96,7 +96,23 @@ addEventListener('DOMContentLoaded', function () {
 
     
 
-   
+   document.querySelectorAll('.metric-card__circle').forEach(circle => {
+  const progress = Number(circle.dataset.progress); // 0–100
+  const path = circle.querySelector('.progress-ring__value');
+
+  const length = path.getTotalLength();
+
+  // инициализация
+  path.style.strokeDasharray = length;
+  path.style.strokeDashoffset = length;
+
+  // принудительный reflow
+  path.getBoundingClientRect();
+
+  // анимация
+  const offset = length * (1 - progress / 100);
+  path.style.strokeDashoffset = offset;
+});
 
 
 
