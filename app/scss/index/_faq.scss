@@ -32,7 +32,8 @@
     }
 
     &__inner {
-        max-width: 987px;
+        padding-right: 50px;
+        max-width: 1015px;
         width: 100%;
     }
 
@@ -71,5 +72,17 @@
     &__icon {
         transform: rotate(90deg);
         transition: transform 0.3s;
+    }
+}
+
+@media(max-width: 576px) {
+    .faq {
+        &__subtitle {
+            font-size: 20px;
+        }
+
+        &__answer {
+            font-size: 14px;
+        }
     }
 }

@@ -1,7 +1,7 @@
 .apps {
     &__inner {
         max-width: 322px;
-        width: 1005;
+        width: 100%;
     }
 
     &__title {
@@ -12,7 +12,8 @@
     &__wrap {
         display: flex;
         align-items: center;
-        gap: 79px;
+        flex-wrap: wrap;
+        gap: 32px 79px;
     }
 
     &__list {
@@ -20,6 +21,8 @@
         flex-wrap: wrap;
         text-align: center;
         gap: 24px;
+        max-width: 786px;
+        width: 100%;
     }
 
     &__item {
@@ -57,6 +60,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        font-weight: 700;
         transition: color 0.3s, box-shadow 0.3s, transform 0.3s;
 
         &:hover {
@@ -69,11 +73,103 @@
     }
 
     &__link.blur-plate {
-        padding: 12px 50px;
+        padding: 12px 32px;
+        width: 100%;
+        justify-content: center;
         background: linear-gradient(198.87deg, rgba(255, 255, 255, 0.18) -160.13%, rgba(254, 255, 255, 0.03) 72.05%, rgba(255, 255, 255, 0.12) 207.89%);
 
         &:active {
             transform: scale(0.9);
+        }
+    }
+
+    &__icon {
+        flex-shrink: 0;
+    }
+}
+
+@media(max-width: 1215px) {
+    .apps {
+        &__title {
+            text-align: center;
+        }
+
+        &__wrap {
+            justify-content: center;
+        }
+
+        &__inner {
+            text-align: center;
+            max-width: 100%;
+        }
+
+        &__list {
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 992px) {
+    .apps {
+        &__item {
+            width: 46%;
+        }
+
+        &__link.blur-plate {
+            padding: 12px 22px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .apps {
+        &__inner {
+            max-width: 526px;
+            width: 100%;
+        }
+
+        &__links {
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .apps {
+
+        &__list {
+            gap: 16px;
+        }
+
+        &__item.blur-plate {
+            padding: 16px;
+        }
+
+        &__subtitle {
+            font-size: 24px;
+        }
+
+        &__descr {
+            margin-bottom: 16px;
+            font-size: 14px;
+        }
+
+        &__link {
+            font-size: 14px;
+        }
+    }
+}
+
+@media(max-width: 390px) {
+    .apps {
+        &__item {
+            max-width: 277px;
+            width: 100%;
+        }
+
+        .apps__link.blur-plate {
+            width: 88%;
         }
     }
 }

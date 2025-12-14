@@ -14,29 +14,44 @@
         background: linear-gradient(3deg, rgba(255, 255, 255, 0.3) -1%, rgba(255, 255, 255, 0.05) 42%, rgba(255, 255, 255, 0.2) 122%);
         z-index: -1;
         opacity: 0.6;
+        border-radius: 32px 32px 0 0;
     }
 
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 100px;
         flex-wrap: wrap;
-        padding-bottom: 12px;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-        margin-bottom: 24px;
+        margin-bottom: 12px;
+        gap: 24px 55px;
     }
 
     &__logo {
         display: inline-block;
-        margin-bottom: 12px;
     }
 
     &__address {
         display: flex;
         align-items: center;
-        gap: 32px;
-        margin-bottom: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px 32px;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 12px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        margin-bottom: 12px;
+        flex-wrap: wrap;
+        gap: 24px 100px;
+    }
+
+    &__menu {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     &__link {
@@ -75,6 +90,8 @@
 
     &__list-payments {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 8px;
     }
 
@@ -115,6 +132,38 @@
 
         &::after {
             background: linear-gradient(37.35deg, rgba(61, 220, 132, 0) 60.32%, #3DDC84 94.79%), linear-gradient(211.43deg, rgba(255, 255, 255, 0) 65.44%, rgba(255, 255, 255, 0.6) 100%);
+        }
+    }
+}
+
+@media(max-width:1120px) {
+    .footer {
+        padding: 24px 0;
+
+        &__inner {
+            margin-bottom: 24px;
+        }
+
+        &__nav {
+            justify-content: center;
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+        }
+    }
+}
+
+@media(max-width:768px) {
+    .footer {
+        &__inner {
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 576px) {
+    .footer {
+        &__copyright {
+            font-size: 14px;
         }
     }
 }
