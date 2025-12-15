@@ -93,4 +93,35 @@ addEventListener('DOMContentLoaded', function () {
     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы 
 
   }
+
+  /* slider */
+    var swiper = new Swiper(".reviews-slider", {
+    slidesPerView: 3,
+    spaceBetween: 24,
+      navigation: {
+      nextEl: ".reviews__nav--next",
+      prevEl: ".reviews__nav--prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+      },
+      breakpoints: {
+  
+    320: {
+      slidesPerView: 1.2,
+      spaceBetween: 16
+    },
+
+    767: {
+      slidesPerView: 2,
+      spaceBetween: 24
+    },
+
+    1180: {
+      slidesPerView: 3,
+      spaceBetween: 24
+    }
+  }
+  });
+
 });
