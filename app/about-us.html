@@ -5,8 +5,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
-    Citadel VPN — Fast & Secure Internet Access
+    Citadel VPN About Us
   </title>
+  <meta name="description" content="About Us">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content=" About Us">
+  <meta property="og:description" content=" About Us">
+  <meta property="og:url" content="#">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="About Us">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="About Us">
+  <meta name="twitter:title" content="About Us">
+  <meta name="twitter:description" content="About Us">
+  <!-- Language -->
+  <link rel="alternate" hreflang="en" href="#">
+  <link rel="alternate" hreflang="ar" href="#">
+  <link rel="alternate" hreflang="ru" href="#">
+  <link rel="alternate" hreflang="x-default" href="#">
+  <!-- Canonical -->
+  <link rel="canonical" href="#">
+
   <link rel="icon" type="image/png" href="./images/favicon/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="./images/favicon/favicon.svg" />
   <link rel="shortcut icon" href="./images/favicon/favicon.ico" />
@@ -58,8 +77,8 @@
           </ul>
         </div>
         <div class="user-menu">
-          <div class="switcher-lang blur-plate">
-            <a class="switcher-lang__link" href="#">
+          <div class="switcher-lang">
+            <button class="switcher-lang__btn blur-plate" type="button">
               <div class="switcher-lang__box">
                 <svg width="24" height="24">
                   <use href="./images/sprite.svg#en">
@@ -71,21 +90,32 @@
                 <use href="./images/sprite.svg#arrowBottom">
                 </use>
               </svg>
-            </a>
-            <!-- <a class="switcher-lang__link" href="#">
-                <svg width="24" height="24">
-                    <use href="./images/sprite.svg#ar">
+            </button>
+            <div class="switcher-lang__dropdown blur-plate">
+              <a class="switcher-lang__link switcher-lang__link--active" href="./about-us.html">
+                <div class="switcher-lang__box">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#en">
                     </use>
+                  </svg>
+                  En
+                </div>
+              </a>
+              <a class="switcher-lang__link" href="./ar/about-us.html">
+                <svg width="24" height="24">
+                  <use href="./images/sprite.svg#ar">
+                  </use>
                 </svg>
                 عر
-            </a>
-            <a class="switcher-lang__link" href="#">
+              </a>
+              <a class="switcher-lang__link" href="./ru/about-us.html">
                 <svg width="24" height="24">
-                    <use href="./images/sprite.svg#ru">
-                    </use>
+                  <use href="./images/sprite.svg#ru">
+                  </use>
                 </svg>
                 Ру
-            </a> -->
+              </a>
+            </div>
           </div>
           <a class="cta user-menu__cta" href="#">
             Open VPN
@@ -106,7 +136,7 @@
           <div class="breadcrumbs">
             <ul class="breadcrumbs__list">
               <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="./home.html" data-i18n="breadcrumbs.link">
+                <a class="breadcrumbs__link" href="./index.html">
                   Home
                 </a>
               </li>
@@ -121,240 +151,191 @@
 
         <div class="home__inner">
           <div class="home__tab-nav">
-            <h1 class="home__tab-nav-title" data-i18n="home.tab.navTitle">Terms and Policy</h1>
+            <h1 class="home__tab-nav-title">Terms and Policy</h1>
             <div class="tab-nav">
               <a class="tab-nav__btn " href="./terms-and-conditions.html">
-                Terms and Conditions
+                <span>Terms and Conditions</span>
               </a>
               <a class="tab-nav__btn" href="./privacy-policy.html" target="_blank" rel="noopener noreferrer">
-                Privacy Policy
+                <span>Privacy Policy</span>
               </a>
               <a class="tab-nav__btn" href="./refund-policy.html" target="_blank" rel="noopener noreferrer">
-                Refund Policy
+                <span>Refund Policy</span>
               </a>
-              <a class="tab-nav__btn tab-nav__btn--active" href="./about-us.html" target="_blank" rel="noopener noreferrer">
-                About Us
+              <a class="tab-nav__btn tab-nav__btn--active" href="./about-us.html" target="_blank"
+                rel="noopener noreferrer">
+                <span>About Us</span>
               </a>
             </div>
           </div>
           <div class="home__tabs-content tab">
-            <!-- Terms & Conditions -->
-            <div class="tab__item tab__item--active">
+            <!-- About us -->
+            <div class="tab__item" id="btn_4">
               <div class="tab__inner">
-                <div class="terms">
-                  <h2 class="terms__main-title" data-i18n="terms.title">Terms & Conditions</h2>
-                  <!-- 1. Introduction -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.introduction.title">
-                      1. Introduction
+                <div class="aboutUs">
+                  <h2 class="aboutUs__main-title">
+                    About Us
+                  </h2>
+
+                  <!-- 1. Our Mission: Your Digital Freedom Fortress -->
+                  <section class="aboutUs__section">
+                    <h3 class="aboutUs__title">
+                      Our Mission: Your Digital Freedom Fortress
                     </h3>
 
-                    <p class="terms__text" data-i18n="terms.introduction.text1">
-                      Welcome to Citadel VPN! These Terms & Conditions (“Terms”) govern your use of our website,
-                      Telegram bot, and VPN
-                      services (collectively, the “Services”), which are provided by Citadel VPN (“we”, “us”, or “our”).
-                      By registering for or
-                      using our Services, you agree to be bound by these Terms in their entirety.
-                    </p>
-                    <p class="terms__text" data-i18n="terms.introduction.text2">
-                      Our <a href="/privacy" class="terms-link">Privacy Policy</a> is an integral part of these Terms.
-                      Please read it carefully.
+                    <p class="aboutUs__text">
+                      In an era where digital surveillance and censorship are on the rise, we believe that everyone has
+                      a right to a free and open internet. Our mission is to provide you with a powerful, secure, and
+                      easy-to-use tool to protect your online
+                      privacy and bypass restrictions. Citadel VPN is your fortress in the digital world.
                     </p>
                   </section>
 
-                  <!-- 2. User Account -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.userAccount.title">
-                      2. User Account
+                  <!-- 2. Who We Are -->
+                  <section class="aboutUs__section">
+                    <h3 class="aboutUs__title">
+                      Who We Are
                     </h3>
 
-                    <p class="terms__text" data-i18n="terms.userAccount.text">
-                      To use our Services, you must create an account through our Telegram bot. You are responsible for
-                      maintaining the
-                      confidentiality of your account and for all activities that occur under your account. You agree to
-                      provide accurate and
-                      complete information when creating your account.
-                    </p>
-                    <p class="terms__text" data-i18n="terms.userAccount.text2">
-                      Your account is for your personal use only. Sharing your account with others is strictly
-                      prohibited and may result in the termination of your account.
+                    <p class="aboutUs__text">
+                      We are a team of privacy advocates, cybersecurity experts, and technology enthusiasts dedicated to
+                      building a better
+                      internet. We were founded on the principles of privacy, security, and freedom. We believe that
+                      your data is your own,
+                      and we are committed to protecting it.
                     </p>
                   </section>
 
-                  <!-- 3. Services -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.services.title">
-                      3. Services
+                  <!-- 3. What We Do -->
+                  <section class="aboutUs__section">
+                    <h3 class="aboutUs__title">
+                      What We Do
                     </h3>
 
-                    <p class="terms__text" data-i18n="terms.services.text">
-                      Citadel VPN provides a virtual private network (VPN) service using the VLESS protocol. We grant
-                      you a limited,
-                      non-exclusive, revocable license to use our Services in accordance with these Terms.
+                    <p class="aboutUs__text">
+                      Citadel VPN provides a state-of-the-art VPN service built on the modern and efficient VLESS
+                      protocol. Our service is
+                      designed to be fast, reliable, and secure, allowing you to browse the web without borders.
+                      We are a Telegram-first service, offering a seamless and intuitive user experience through our
+                      powerful Telegram bot.
+                      This allows for quick and easy setup, management of your subscription, and access to our global
+                      network of servers.
                     </p>
                   </section>
 
-                  <!-- 4. Payments -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.payments.title">
-                      4. Payments, Subscriptions, and Refunds
+                  <!-- 4. Our Values -->
+                  <section class="aboutUs__section">
+                    <h3 class="aboutUs__title">
+                      Our Values
                     </h3>
-
-                    <h4 class="terms__subtitle" data-i18n="terms.payments.subscriptions.title">
-                      4.1. Subscriptions
-                    </h4>
-                    <p class="terms__text" data-i18n="terms.payments.subscriptions.text">
-                      Our paid Services are available on a subscription basis. You can choose the subscription period
-                      and payment method
-                      through our Telegram bot. Subscriptions will automatically renew at the end of each service period
-                      unless you cancel the
-                      auto-renewal.
-                    </p>
-
-                    <h4 class="terms__subtitle" data-i18n="terms.payments.renewals.title">
-                      4.2. Renewals
-                    </h4>
-                    <p class="terms__text" data-i18n="terms.payments.renewals.text">
-                      We accept payments through various payment processors, including Cryptomus. By providing a payment
-                      method, you authorize
-                      us to charge you for the selected Services.
-                    </p>
-
-                    <h4 class="terms__subtitle" data-i18n="terms.payments.refunds.title">
-                      4.3. Refund Policy
-                    </h4>
-                    <p class="terms__text" data-i18n="terms.payments.refunds.text1">
-                      We offer a 14-day money-back guarantee for your initial purchase. If you are not satisfied with
-                      our Services, you may
-                      request a refund within 14 days of your first payment. Refund requests are subject to approval by
-                      our support team and
-                      are reviewed on a case-by-case basis.
-                    </p>
-                    <p class="terms__text" data-i18n="terms.payments.refunds.text2">
-                      Refunds are not available for payments made with certain prepaid cards or gift cards. For
-                      cryptocurrency payments, the
-                      refund will be processed in the same cryptocurrency, equivalent to the USD value at the time of
-                      purchase. Any
-                      transaction fees associated with the refund are your responsibility.
-                    </p>
-                  </section>
-
-                  <!-- 5. Acceptable Use -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.acceptableUse.title">
-                      5. Acceptable Use Policy
-                    </h3>
-
-                    <p class="terms__text" data-i18n="terms.acceptableUse.text">
-                      You agree not to use our Services for any illegal or prohibited activities, including but not
-                      limited to:
-                    </p>
-
-                    <ul class="terms__list">
-                      <li class="terms__item" data-i18n="terms.acceptableUse.item1">Sending spam or unsolicited emails.
+                    <ul class="aboutUs__list">
+                      <li class="aboutUs__item">
+                        <span class="aboutUs__text aboutUs__text--bold">Privacy:</span>
+                        <span class="aboutUs__text">
+                          Your privacy is our top priority. We have a strict no-logs policy, meaning we never track,
+                          store, or share your
+                          online activity.</span>
                       </li>
-                      <li class="terms__item" data-i18n="terms.acceptableUse.item2">Engaging in any form of hacking,
-                        cracking, or network
-                        attacks.</li>
-                      <li class="terms__item" data-i18n="terms.acceptableUse.item3">Distributing malware, viruses, or
-                        other malicious
-                        software.</li>
-                      <li class="terms__item" data-i18n="terms.acceptableUse.item4">Infringing on the intellectual
-                        property rights of
-                        others.</li>
-                      <li class="terms__item" data-i18n="terms.acceptableUse.item5">Transmitting or distributing any
-                        content that is
-                        illegal, abusive, or harassing.</li>
-                      <li class="terms__item" data-i18n="terms.acceptableUse.item6">Accessing or distributing child
-                        pornography or other
-                        illicit materials.</li>
+                      <li class="aboutUs__item">
+                        <span class="aboutUs__text aboutUs__text--bold">
+                          Security:
+                        </span>
+                        <span class="aboutUs__text">
+                          We use military-grade encryption and the latest VPN protocols to keep your data safe from
+                          prying eyes.
+                        </span>
+                      </li>
+                      <li class="refund__item">
+                        <span class="aboutUs__text aboutUs__text--bold">
+                          Freedom:
+                        </span>
+                        <span class="aboutUs__text">
+                          We believe in an open internet for everyone. Our service helps you bypass censorship and
+                          access the content you want, wherever you are.
+                        </span>
+                      </li>
+                      <li class="aboutUs__item">
+                        <span class="aboutUs__text aboutUs__text--bold">
+                          Transparency:
+                        </span>
+                        <span class="aboutUs__text">
+                          We are committed to being open and honest with our users. We believe that trust is earned
+                          through
+                          transparency.
+                        </span>
+                      </li>
                     </ul>
-                    <p class="terms__text terms__text--down" data-i18n="terms.acceptableUse.downtext">
-                      You agree not to use our Services for any illegal or prohibited activities, including but not
-                      limited to:
-                    </p>
                   </section>
 
-                  <!-- 6. No-Logs Policy -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.noLogs.title">
-                      6. No-Logs Policy
+                  <!-- 5. Why Choose Citadel VPN? -->
+                  <section class="aboutUs__section">
+                    <h3 class="aboutUs__title">
+                      Why Choose Citadel VPN?
                     </h3>
-
-                    <p class="terms__text" data-i18n="terms.noLogs.text">
-                      We are committed to your privacy. We do not monitor, log, or store any of your online activity,
-                      including browsing
-                      history, traffic destination, data content, or DNS queries. For more details, please see our
-                      <a href="/privacy" class="terms-link">Privacy Policy</a>.
-                    </p>
+                    <ul class="aboutUs__list">
+                      <li class="aboutUs__item">
+                        <span class="aboutUs__text aboutUs__text--bold">
+                          Modern Technology:
+                        </span>
+                        <span class="aboutUs__text">
+                          We use the VLESS protocol, which is designed for performance and security.
+                        </span>
+                      </li>
+                      <li class="aboutUs__item">
+                        <span class="aboutUs__text aboutUs__text--bold">
+                          Telegram-First:
+                        </span>
+                        <span class="aboutUs__text">
+                          Manage your VPN directly from Telegram, one of the world's most popular and secure messaging
+                          apps.
+                        </span>
+                      </li>
+                      <li class="refund__item">
+                        <span class="aboutUs__text aboutUs__text--bold">
+                          Global Network:
+                        </span>
+                        <span class="aboutUs__text">
+                          Access our network of high-speed servers in locations around the world.
+                        </span>
+                      </li>
+                      <li class="aboutUs__item">
+                        <span class="aboutUs__text aboutUs__text--bold">
+                          No-Logs Policy:
+                        </span>
+                        <span class="aboutUs__text">
+                          We never log your activity. Your privacy is guaranteed.
+                        </span>
+                      </li>
+                      <li class="aboutUs__item">
+                        <span class="aboutUs__text aboutUs__text--bold">
+                          24/7 Support:
+                        </span>
+                        <span class="aboutUs__text">
+                          Our dedicated support team is always here to help you.
+                        </span>
+                      </li>
+                    </ul>
                   </section>
 
-                  <!-- 7. Disclaimer of Warranties -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.disclaimer.title">
-                      7. Disclaimer of Warranties
+                  <!-- 6. Join Us -->
+                  <section class="aboutUs__section">
+                    <h3 class="aboutUs__title">
+                      Join Us
                     </h3>
 
-                    <p class="terms__text" data-i18n="terms.disclaimer.text">
-                      Our Services are provided on an “as is” and “as available” basis. We do not warrant that our
-                      Services will be
-                      uninterrupted, error-free, or completely secure. You use our Services at your own risk.
+                    <p class="aboutUs__text">
+                      Take control of your digital life. Join the Citadel VPN community and experience the internet
+                      without borders.
                     </p>
-                  </section>
-
-                  <!-- 8. Limitation of Liability -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.liability.title">
-                      8. Limitation of Liability
-                    </h3>
-
-                    <p class="terms__text" data-i18n="terms.liability.text">
-                      To the fullest extent permitted by law, Citadel VPN shall not be liable for any direct, indirect,
-                      incidental, special,
-                      or consequential damages arising out of your use of our Services.
-                    </p>
-                  </section>
-
-                  <!-- 9. General Terms -->
-                  <section class="terms__section">
-                    <h3 class="terms__title" data-i18n="terms.general.title">
-                      9. General Terms
-                    </h3>
-
-                    <!-- 9.1 Amendments -->
-                    <h4 class="terms__subtitle" data-i18n="terms.general.amendments.title">
-                      9.1. Amendments
-                    </h4>
-                    <p class="terms__text" data-i18n="terms.general.amendments.text">
-                      We may amend these Terms at any time by posting the updated version on our website. Your continued
-                      use of the Services
-                      after any changes constitutes your acceptance of the new Terms.
-                    </p>
-
-                    <!-- 9.2 Governing Law -->
-                    <h4 class="terms__subtitle" data-i18n="terms.general.law.title">
-                      9.2. Governing Law
-                    </h4>
-                    <p class="terms__text">
-                      <span class="terms__text" data-i18n="terms.general.law.text.regular">
-                        These Terms shall be governed by and construed in accordance with the laws of
-                      </span>
-                      <span class="terms__text terms__text--bold" data-i18n="terms.general.law.text.bold">[Your
-                        Jurisdiction].</span>
-                    </p>
-
-                    <!-- 9.3 Contact Us -->
-                    <h4 class="terms__subtitle" data-i18n="terms.general.contact.title">
-                      9.3. Contact Us
-                    </h4>
-                    <p class="terms__text" data-i18n="terms.general.contact.text">
-                      If you have any questions about these Terms, please contact us at <a
-                        href="mailto:info@vpncitadel.com" class="terms-link">
+                    <p class="aboutUs__text">
+                      Contact Us: <a href="mailto:info@vpncitadel.com" class="terms-link">
                         info@vpncitadel.com
-                      </a>.
+                      </a>
                     </p>
+
                   </section>
                 </div>
+
               </div>
             </div>
           </div>
@@ -362,6 +343,143 @@
       </div>
     </section>
   </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <nav class="footer__nav">
+          <a class="logo footer__logo" href="#">
+            <img src="./images/logo.svg" alt="CitadelVPN Logo" width="190" height="57">
+          </a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="./terms-and-conditions.html">
+                Terms and Conditions
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./privacy-policy.html">
+                Privacy Policy
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./refund-policy.html">
+                Refund Policy
+              </a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="./about-us.html">
+                About Us
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__info">
+          <address class="footer__address">
+            <a class="footer__link" href="mailto:info@vpncitadel.com">
+              <div class="footer__icon blur-plate">
+                <svg width="22" height="17">
+                  <use href="./images/sprite.svg#email"></use>
+                </svg>
+              </div>
+              info@vpncitadel.com
+            </a>
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#telegramDark"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Go to Citadel VPN Telegram channel
+                  </span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Go to Citadel VPN Instagram page
+                  </span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#x"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Go to Citadel VPN page on X
+                  </span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Go to Citadel VPN Facebook page
+                  </span>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#tikTok"></use>
+                  </svg>
+                  <span class="visually-hidden">
+                    Go to Citadel VPN TikTok account
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </address>
+          <ul class="footer__list-payments">
+            <li class="footer__item">
+              <svg width="57" height="35">
+                <use href="./images/sprite.svg#payPal"></use>
+              </svg>
+            </li>
+            <li class="footer__item">
+              <svg width="61" height="34">
+                <use href="./images/sprite.svg#masterCard"></use>
+              </svg>
+            </li>
+            <li class="footer__item">
+              <svg width="61" height="34">
+                <use href="./images/sprite.svg#visa"></use>
+              </svg>
+            </li>
+            <li class="footer__item">
+              <svg width="61" height="35">
+                <use href="./images/sprite.svg#americanExpress"></use>
+              </svg>
+            </li>
+            <li class="footer__item">
+              <svg width="61" height="35">
+                <use href="./images/sprite.svg#jcb"></use>
+              </svg>
+            </li>
+            <li class="footer__item">
+              <svg width="61" height="35">
+                <use href="./images/sprite.svg#discover"></use>
+              </svg>
+            </li>
+            <li class="footer__item">
+              <svg width="61" height="35">
+                <use href="./images/sprite.svg#bitcoin"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span class="footer__copyright">
+        Copyright © 2025 Citadel VPN. All rights reserved.
+      </span>
+    </div>
+  </footer>
 
 
 
