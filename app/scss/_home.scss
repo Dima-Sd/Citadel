@@ -31,13 +31,34 @@
       }
     }
   }
+  &__link {
+    position: relative;
+    transition: all .3s;
+    padding-bottom: 1px;
+    &:hover {
+      color: $light-900;
+    }
+    &:active {
+      color: $light-900;
+  
+      &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px;
+        background-color: $light-900;
+        left: 0;
+        bottom: 0;
+      }
+    }
+
+    &:focus {
+      filter: drop-shadow(#3DDC84 3px 3px 10px);
+    }
+  }
 }
 
 .home {
-  background: linear-gradient(180deg, rgba(13, 27, 42, 0) 0%, #0D1B2A 100%);
-  z-index: 0;
-  position: relative;
-
   &::before {
     position: absolute;
     content: "";
@@ -108,20 +129,11 @@
 }
 
 .tab {
-  &__item {
-    display: none;
-
-    &--active {
-      display: block;
-    }
-  }
 
   &__inner {
     display: flex;
     align-items: stretch;
   }
-
-  &__content {}
 
 }
 
@@ -130,7 +142,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-
   &__btn {
     @include Inter-400;
     color: $light;
@@ -142,19 +153,9 @@
     position: relative;
     width: 100%;
     text-align: left;
-
+    transition: all .3s;
     &:hover {
-
-      &::before,
-      &::after {
-        position: absolute;
-        content: '';
-        height: 100%;
-        width: 4px;
-        background-color: $light-900;
-        top: 50%;
-        transform: translateY(-50%)
-      }
+      color: $light-900;
 
       &::before {
         left: -25px;
@@ -165,7 +166,16 @@
       }
     }
 
-    &:active {}
+    &:active {
+      color: $light-900;
+      span {
+        border-bottom: 1px solid $light-900;
+        width: 100%;
+      }
+    }
+    &:focus {
+      filter: drop-shadow(#3DDC84 3px 3px 10px);
+    }
 
 
     &--active {
@@ -284,17 +294,21 @@
   color: $light-900;
   font-size: 18px;
   position: relative;
-  padding-bottom: 1px;
-  padding-left: 2px;
-
-  &::before {
-    position: absolute;
-    content: '';
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: $light-900;
+  padding: 6px 6px 3px 6px;
+  border-radius: 6px;
+  text-decoration: underline;
+  &:hover {
+    background: #132436;
+  }
+  &:active {
+   color: #0D783D;
+  }
+  &:focus {
+    filter: drop-shadow(#3DDC84 3px 3px 10px);
+  }
+  &:visited {
+    background: transparent;
+    color: #0D783D;
   }
 }
 

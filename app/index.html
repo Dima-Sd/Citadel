@@ -20,70 +20,97 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
-
 <body>
+
     <div class="wrapper">
-        <div class="container">
-            <nav class="menu">
-                <div class="header__inner">
-                    <a class="logo" href="#">
-                        <img src="./images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
-                    </a>
-                    <ul class="menu">
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Features
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Pricing
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Support
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                Blog
-                            </a>
-                        </li>
-                        <li class="menu__item">
-                            <a class="menu__link" href="#">
-                                News
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="user-menu">
-                    <div class="switcher-lang blur-plate">
-                        <a class="switcher-lang__link" href="#">
-                            <div class="switcher-lang__box">
-                                <svg width="24" height="24">
-                                    <use href="./images/sprite.svg#en">
+        <header class="header" id="header" data-i18n-section="header">
+            <div class="container">
+                <nav class="menu">
+                    <div class="header__inner">
+                        <a class="logo" href="#">
+                            <img src="./images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
+                        </a>
+                        <ul class="menu">
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" data-i18n="nav_features" data-scroll>
+                                    Features
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" data-i18n="nav_pricing" data-scroll>
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" data-i18n="nav_support" data-scroll>
+                                    Support
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" data-i18n="nav_blog" data-scroll>
+                                    Blog
+                                </a>
+                            </li>
+                            <li class="menu__item">
+                                <a class="menu__link" href="#" data-i18n="nav_news" data-scroll>
+                                    News
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- lang menu -->
+                    <div class="user-menu">
+                        <div class="switcher-lang">
+                            <button class="switcher-lang__btn blur-plate" type="button">
+                                <div class="switcher-lang__box">
+                                    <svg width="24" height="24">
+                                        <use href="./images/sprite.svg#en">
+                                        </use>
+                                    </svg>
+                                    En
+                                </div>
+                                <svg class="icon" width="11" height="6">
+                                    <use href="./images/sprite.svg#arrowBottom">
                                     </use>
                                 </svg>
-                                En
+                            </button>
+                            <div class="switcher-lang__dropdown blur-plate">
+                                <a class="switcher-lang__link switcher-lang__link--active" href="./index.html">
+                                    <div class="switcher-lang__box">
+                                        <svg width="24" height="24">
+                                            <use href="./images/sprite.svg#en">
+                                            </use>
+                                        </svg>
+                                        En
+                                    </div>
+                                </a>
+                                <a class="switcher-lang__link" href="./ar/index.html">
+                                    <svg width="24" height="24">
+                                        <use href="./images/sprite.svg#ar">
+                                        </use>
+                                    </svg>
+                                    عر
+                                </a>
+                                <a class="switcher-lang__link" href="./ru/index.html">
+                                    <svg width="24" height="24">
+                                        <use href="./images/sprite.svg#ru">
+                                        </use>
+                                    </svg>
+                                    Ру
+                                </a>
                             </div>
-                            <svg class="icon" width="11" height="6">
-                                <use href="./images/sprite.svg#arrowBottom">
+                        </div>
+                        <a class="cta user-menu__cta" href="#">
+                            Open VPN
+                            <svg class="icon" width="20" height="20">
+                                <use href="./images/sprite.svg#telegramLight">
                                 </use>
                             </svg>
                         </a>
                     </div>
-                    <a class="cta user-menu__cta" href="#">
-                        Open VPN
-                        <svg class="icon" width="20" height="20">
-                            <use href="./images/sprite.svg#telegramLight">
-                            </use>
-                        </svg>
-                    </a>
-                </div>
-            </nav>
-        </div>
-        </header> --
+                </nav>
+            </div>
+        </header>
 
         <main class="main">
             <h1 class="visually-hidden">
