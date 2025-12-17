@@ -148,6 +148,7 @@
         display: flex;
         align-items: center;
         gap: 8px;
+        text-align: left;
     }
 
     &__list-item:not(:last-child) {
@@ -162,4 +163,12 @@
         width: 28px;
         height: 28px;
     }
+}
+
+@media (max-width: 440px) {
+  .plan {
+    &__item {
+      max-width: 100%;
+    }
+  }
 }

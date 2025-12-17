@@ -161,9 +161,12 @@
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 24px;
+          gap: 0;
           &__item {
             flex: 0 0 45%;
+            &:nth-child(2n){
+              padding-left: 24px;
+            }
             &:nth-child(2n+1) {
               text-align: right;
             }
@@ -174,9 +177,14 @@
 
 @media(max-width: 576px) {
     .footer {
-        &__copyright {
-            font-size: 14px;
+      &__copyright {
+          font-size: 14px;
+      }
+      .menu {
+        &__link {
+          font-size: 14px;
         }
+      }
     }
 }
 
@@ -185,6 +193,10 @@ html[dir="rtl"] {
   direction: rtl;
   text-align: right;
   .footer {
+    .menu__item:nth-child(2n) {
+      padding-left: 0;
+      padding-right: 24px;
+    }
     .menu__item:nth-child(2n+1) {
       text-align: left;
     }

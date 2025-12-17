@@ -43,3 +43,20 @@
         padding: 12px 12px 12px 20px;
     }
 }
+
+@media (max-width: 880px) {
+
+  .header__inner {
+    .menu {
+      display: none;
+    }
+  }
+}
+
+
+
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+  
+}

@@ -3,7 +3,7 @@
     max-width: 1188px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
+  
     &::after {
         content: "";
         position: absolute;
@@ -145,12 +145,106 @@
             right: 81px;
         }
 
-        .hero__info {
-            max-width: 344px;
-        }
-
         &__title {
             font-size: 64px;
         }
     }
+}
+@media(max-width: 880px) {
+    .hero {
+      &::after {
+        right: 15px;
+      }
+      &__info {
+        max-width: 344px;
+      }
+      &__subtitle {
+        text-wrap: balance;
+      }
+    }
+}
+@media(max-width: 728px) {
+  .hero {
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: none;
+    }
+  }
+}
+@media(max-width: 576px) {
+  .hero {
+    &__info {
+      max-width: 100%;
+    }
+    &__title {
+      font-size: 48px;
+    }
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+}
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+
+  .hero {
+    &::after {
+      right: auto;
+      left: 107px;
+      transform: scale3d(-1, 1,-1);
+    }
+    &__info {
+      margin-right: 0;
+      margin-left: auto;
+    }
+
+    .cta {
+      flex-direction: row-reverse;
+      padding: 12px 52px;
+      gap: 25px;
+    }
+  }
+
+
+  @media(max-width: 1054px){
+      .hero {
+      &::after {
+        right: auto;
+        left: 81px;
+      }
+    }
+  }
+  @media(max-width: 728px) {
+    .hero {
+      &:after {
+        display: block;
+      }
+
+      &:before {
+        display: block;
+      }
+    }
+  }
+  @media(max-width: 880px){
+      .hero {
+      &::after {
+        right: auto;
+        left: 15px;
+      }
+    }
+  }
+  @media(max-width: 660px) {
+    .hero {
+      &:after {
+        display: none;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
 }

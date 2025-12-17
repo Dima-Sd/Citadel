@@ -1,32 +1,46 @@
 html[dir="rtl"] {
   direction: rtl;
   text-align: right;
-
-  .hero{
+  
+  .advantages__item {
+    text-align: right;
+  }
+  .steps {
+    .title {
+      text-align: right;
+    }
     &__info {
-      margin-right: 0;
-      margin-left: auto;
+      text-align: right;
     }
-    .cta {
-      flex-direction: row-reverse;
-      padding: 12px 52px;
-      gap: 25px;
+    &__list {
+      justify-content: flex-start;
+    }
+    &__item::before {
+      left: auto;
+      right: 32px;
     }
   }
-
-  .faq__icon {
-    transform: rotate(180deg);
-  }
-  .faq__icon.faq__icon--open {
-    transform: rotate(270deg);
-  }
-  .faq__button.active{
-    .faq__icon {
+  .faq {
+    &__inner {
+      padding-right: 0;
+      padding-left: 50px;
+    }
+    &__title {
+      text-align: right;
+    }
+    &__icon {
+      transform: rotate(180deg);
+    }
+    &__icon.faq__icon--open {
       transform: rotate(270deg);
     }
+    &__button.active{
+      .faq__icon {
+        transform: rotate(270deg);
+      }
+    }
   }
-  .steps__item::before {
-    left: auto;
-    right: 32px;
+  .plan__list-item {
+    text-align: right;
   }
 }
