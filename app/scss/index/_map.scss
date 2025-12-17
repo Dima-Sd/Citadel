@@ -6,12 +6,8 @@
     }
   }
 }
-.map-flag.is-active {
-  filter: drop-shadow(#3DDC84 100px 100px 100px);
-}
 
-.map-flag.is-active circle,
-.map-flag.is-active path {
+.map-flag.is-active {
   animation: pulse 1.5s infinite ease-in-out;
 }
 
@@ -26,5 +22,6 @@
 
   100% {
     opacity: 1;
+    filter: drop-shadow(#3DDC84 100px 100px 100px);
   }
 }
