@@ -1,30 +1,35 @@
 .map {
   &__inner {
-    svg{
+    svg {
       width: 100%;
       height: auto;
     }
   }
 }
+
 .map-flag.is-active {
-  filter: drop-shadow(#3DDC84 100px 100px 100px);
+  animation: ripple 2.6s infinite ease-out;
+  transform-origin: center;
+  transform-box: fill-box;
+  /* для SVG – життєво необхідно */
 }
 
-.map-flag.is-active circle,
-.map-flag.is-active path {
-  animation: pulse 1.5s infinite ease-in-out;
-}
-
-@keyframes pulse {
+@keyframes ripple {
   0% {
-    opacity: 1;
+    transform: scale(1);
+    opacity: 0;
+    /* плавна поява */
   }
 
-  50% {
-    opacity: 0.3;
+  15% {
+    opacity: 0.9;
+    /* хвиля проявляється */
   }
 
   100% {
-    opacity: 1;
+    transform: scale(2.8);
+    /* розширення хвилі */
+    opacity: 0;
+    /* мʼяке зникнення */
   }
 }

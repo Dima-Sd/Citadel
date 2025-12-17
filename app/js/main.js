@@ -4,26 +4,28 @@ document.addEventListener('DOMContentLoaded', () => {
      GEO IP MAP HIGHLIGHT
   ========================= */
 
+  // підсвітка флага на карте
   fetch('https://ipwho.is/')
     .then(res => res.json())
     .then(data => {
-      if (!data.success) return;
+      const countryCode = data.country_code; // Наприклад UA, PL, DE, US...
 
-      const countryCode = data.country_code;
-      if (!countryCode) return;
-
-      const flag = document.querySelector(
+      // Вибираємо всі кола країни (бо їх 6 штук на одну)
+      const flags = document.querySelectorAll(
         `.map-flag[data-country="${countryCode}"]`
       );
 
-      if (flag) {
+      // Додаємо клас is-active кожному колу
+      flags.forEach(flag => {
         flag.classList.add('is-active');
-      }
+      });
 
-      console.log('GeoIP:', data.country, countryCode);
+      console.log('GeoIP data:', data);
+      console.log('Country:', data.country);
+      console.log('Country code:', data.country_code);
     })
     .catch(err => {
-      console.error('GeoIP error:', err);
+      console.error('GeoIP error', err);
     });
 
   /* =========================
