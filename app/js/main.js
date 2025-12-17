@@ -44,12 +44,12 @@ addEventListener('DOMContentLoaded', function () {
   });
 
 
-/* Счетчик */
+  /* Счетчик */
   const startAddonNumber = (elements) => {
-    const time = 2000;  
+    const time = 2000;
 
     elements.forEach(item => {
-      const targetValue = item.dataset.countNum; 
+      const targetValue = item.dataset.countNum;
       const num = parseFloat(targetValue);
 
       const hasDecimal = targetValue.includes('.');
@@ -90,31 +90,32 @@ addEventListener('DOMContentLoaded', function () {
       });
 
     }, { threshold: 0.5 });
-    observer.observe(addonElement); 
+    observer.observe(addonElement);
 
   }
 
-// подсветка флага на карте
-  fetch('https://ipapi.co/json/')
+// підсвітка флага на карте
+fetch('https://ipwho.is/')
   .then(res => res.json())
   .then(data => {
-    const countryCode = data.country_code;
+    const countryCode = data.country_code; // Наприклад UA, PL, DE, US...
 
-    const flag = document.querySelector(
+    // Вибираємо всі кола країни (бо їх 6 штук на одну)
+    const flags = document.querySelectorAll(
       `.map-flag[data-country="${countryCode}"]`
     );
 
-    if (flag) {
+    // Додаємо клас is-active кожному колу
+    flags.forEach(flag => {
       flag.classList.add('is-active');
-    }
+    });
 
     console.log('GeoIP data:', data);
     console.log('Country:', data.country);
     console.log('Country code:', data.country_code);
-  }).catch(err => {
+  })
+  .catch(err => {
     console.error('GeoIP error', err);
   });
-
-
 
 });
