@@ -156,16 +156,20 @@
       width: 100%;
       height: auto;
     }
-  }
-  .user-menu {
-    gap: 8px;
-    &__cta {
-      padding: 14px 18px;
-      .icon {
-        display: none;
+    .menu {
+      margin-left: 8px;
+    }
+    .user-menu {
+      gap: 8px;
+      &__cta {
+        padding: 14px 18px;
+        .icon {
+          display: none;
+        }
       }
     }
   }
+  
 }
 
 
@@ -195,4 +199,13 @@ html[dir="rtl"] {
       }
     }
   }
+  @media (max-width: 576px) {
+  .header {
+    .menu {
+      margin-left: 0;
+      margin-right: 8px
+    }
+  }
+  
+ }
 }
