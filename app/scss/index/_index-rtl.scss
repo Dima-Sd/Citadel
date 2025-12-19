@@ -69,6 +69,22 @@ html[dir="rtl"] {
     .steps__info {
       text-align: right;
     }
+    .metrics {
+      &__cards-item {
+        &--upload {
+          margin-left: 0;
+          margin-right: auto;
+          display: flex;
+          align-items: center;
+          justify-content: end;
+        }
+    
+        &--latency {
+          margin-left: auto;
+          margin-right: 0;
+        }
+      }
+    }
   }
 
   @media(max-width: 1006px) {

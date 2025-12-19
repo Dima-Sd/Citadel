@@ -279,23 +279,25 @@ accordionButtons.forEach(button => {
   }
 
 
-  /* coockie */
+/* cookie  */
 const cookie = document.getElementById('cookie');
 const acceptBtn = cookie.querySelector('.cookie__accept');
 const closeBtn = cookie.querySelector('.cookie__close');
 
+// если пользователь уже согласился — ничего не делаем
 if (!localStorage.getItem('cookieAccepted')) {
-  requestAnimationFrame(() => {
+  setTimeout(() => {
     cookie.classList.add('is-visible');
-  });
+  }, 4000);
 }
 
-function hideCookie() {
+const hideCookie = () => {
   localStorage.setItem('cookieAccepted', 'true');
   cookie.classList.remove('is-visible');
-}
+};
 
 acceptBtn.addEventListener('click', hideCookie);
 closeBtn.addEventListener('click', hideCookie);
+
 
 });
