@@ -124,7 +124,7 @@
 
 @media (max-width: 767px) {
   .cookie {
-    max-width: 100%;
+    max-width: calc(100% - 30px);
 
     &__text {
       font-size: 14px;
