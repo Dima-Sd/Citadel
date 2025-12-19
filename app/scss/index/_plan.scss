@@ -119,6 +119,13 @@
         font-weight: 600;
         font-family: "Roboto Condensed", sans-serif;
     }
+    &__price {
+      font-size: 32px;
+      color: $light-900;
+      text-align: center;
+      margin-bottom: 12px;
+      @include RobotoCondensed-600;
+    }
 
     &__period {
         display: flex;

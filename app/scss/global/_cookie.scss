@@ -74,6 +74,17 @@
     &.blur-plate {
       padding: 6px;
     }
+    &.cta {
+      &:before {
+        inset: 6px;
+      }
+      &:active {
+        &::before {
+          transition: all .3s;
+          inset: 8px;
+        }
+      }
+    }
   }
 
   &__close {
@@ -116,6 +127,7 @@
 
 @media (max-width: 1200px) {
   .cookie {
+    max-width: calc(100% - 30px);
     &__text {
       font-size: 14px;
     }
@@ -124,8 +136,6 @@
 
 @media (max-width: 767px) {
   .cookie {
-    max-width: calc(100% - 30px);
-
     &__text {
       font-size: 14px;
     }

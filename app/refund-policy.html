@@ -41,416 +41,417 @@
 </head>
 
 <body>
-  <header class="header" id="header" data-i18n-section="header">
-    <div class="container">
-      <div class="header__inner">
-        <a class="logo" href="./index.html">
-          <picture>
-            <source media="(max-width: 576px)" srcset="./images/header-logo-s.svg">
-            <img src="./images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
-          </picture>
-        </a>
-        <!-- menu  -->
-        <nav class="menu">
-          <button class="menu__btn blur-plate" type="button">
-            <svg class="menu__btn-icon" width="22" height="22">
-              <use href="./images/sprite.svg#menuBtn"></use>
-            </svg>
-            <svg class="menu__btn-icon-close" width="11" height="11">
+  <div class="wrapper">
+
+    <header class="header" id="header" data-i18n-section="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="./index.html">
+            <picture>
+              <source media="(max-width: 576px)" srcset="./images/header-logo-s.svg">
+              <img src="./images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
+            </picture>
+          </a>
+          <!-- menu  -->
+          <nav class="menu">
+            <button class="menu__btn blur-plate" type="button">
+              <svg class="menu__btn-icon" width="22" height="22">
+                <use href="./images/sprite.svg#menuBtn"></use>
+              </svg>
+              <svg class="menu__btn-icon-close" width="11" height="11">
+                <use href="./images/sprite.svg#menuBtnClose"></use>
+              </svg>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html">
+                  Features
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="../index.html#plan">
+                  Pricing
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html">
+                  Support
+                </a>
+              </li>
+              <!--   <li class="menu__item">
+                    <a class="menu__link" href="#" data-scroll>
+                        Blog
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#" data-scroll>
+                        News
+                    </a>
+                  </li> -->
+            </ul>
+          </nav>
+    
+          <!-- lang menu -->
+          <div class="user-menu">
+            <div class="switcher-lang">
+              <button class="switcher-lang__btn blur-plate" type="button">
+                <div class="switcher-lang__box">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#en">
+                    </use>
+                  </svg>
+                  <span>En</span>
+                </div>
+                <svg class="icon" width="11" height="6">
+                  <use href="./images/sprite.svg#arrowBottom">
+                  </use>
+                </svg>
+              </button>
+              <div class="switcher-lang__dropdown blur-plate">
+                <a class="switcher-lang__link switcher-lang__link--active" href="./refund-policy.html">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#en">
+                    </use>
+                  </svg>
+                  <span>En</span>
+                </a>
+                <a class="switcher-lang__link" href="./ar/refund-policy.html">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#ar">
+                    </use>
+                  </svg>
+                  <span>عر</span>
+                </a>
+                <a class="switcher-lang__link" href="./ru/refund-policy.html">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#ru">
+                    </use>
+                  </svg>
+                  <span>Ру</span>
+                </a>
+              </div>
+            </div>
+            <a class="cta user-menu__cta" href="#">
+              Open VPN
+              <svg class="icon" width="20" height="20">
+                <use href="./images/sprite.svg#telegramLight">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+  
+      <section class="home">
+        <div class="container">
+          <div class="top">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="./index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Terms and Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="home__inner">
+            <div class="home__tab-nav">
+              <h1 class="home__tab-nav-title">Terms and Policy</h1>
+              <div class="tab-nav">
+                <a class="tab-nav__btn " href="./terms-and-conditions.html">
+                  <span>Terms and Conditions</span>
+                </a>
+                <a class="tab-nav__btn" href="./privacy-policy.html">
+                  <span>Privacy Policy</span>
+                </a>
+                <a class="tab-nav__btn tab-nav__btn--active" href="./refund-policy.html">
+                  <span>Refund Policy</span>
+                </a>
+                <a class="tab-nav__btn" href="./about-us.html">
+                  <span>About Us</span>
+                </a>
+              </div>
+            </div>
+            <div class="home__tabs-content tab">
+              <!-- Terms & Conditions -->
+              <div class="tab__item" id="btn_3">
+                <div class="tab__inner">
+                  <div class="refund">
+                    <h2 class="refund__main-title">
+                      Refund Policy
+                    </h2>
+  
+                    <!-- 1. 14-Day Money-Back Guarantee -->
+                    <section class="refund__section">
+                      <h3 class="refund__title">
+                        1. 14-Day Money-Back Guarantee
+                      </h3>
+  
+                      <p class="refund__text">
+                        We are committed to your satisfaction. If you are not completely satisfied with our Services, you
+                        can request a full refund within 14 days of your initial purchase.
+                      </p>
+                    </section>
+  
+                    <!-- 2. How to Request a Refund -->
+                    <section class="refund__section">
+                      <h3 class="refund__title">
+                        2. 2. How to Request a Refund
+                      </h3>
+                      <p class="refund__text">
+                        To request a refund, please contact our customer support team at <a
+                          href="mailto:info@vpncitadel.com" class="terms-link">info@vpncitadel.com</a> with your account
+                        information and the reason for your request. All refund requests are subject to approval by our
+                        support team and are reviewed on a case-by-case basis.
+                      </p>
+  
+                    </section>
+  
+                    <!-- 3. Refund Processing -->
+                    <section class="refund__section">
+                      <h3 class="refund__title">
+                        3. Refund Processing
+                      </h3>
+  
+                      <p class="refund__text">
+                        Once your refund request is approved, we will process the refund to your original method of
+                        payment. Please allow 5-10
+                        business days for the refund to appear in your account.
+                      </p>
+  
+                      <!-- 3.1 Account Information -->
+                      <h4 class="refund__subtitle">
+                        3.1. Cryptocurrency Refunds
+                      </h4>
+                      <p class="refund__text">
+                        For payments made with cryptocurrency, the refund will be processed in the same cryptocurrency.
+                        The refund amount will be equivalent to the USD value of your purchase at the time of the
+                        transaction. Any blockchain transaction fees associated with the refund will be your
+                        responsibility.
+                      </p>
+                    </section>
+  
+                    <!-- 4. Exclusions -->
+                    <section class="refund__section">
+                      <h3 class="refund__title">
+                        4. Exclusions
+                      </h3>
+                      <ul class="refund__list">
+                        <li class="refund__item">This money-back guarantee applies
+                          only to your initial purchase.</li>
+                        <li class="refund__item">Refunds are not available for
+                          subscription renewals.</li>
+                        <li class="refund__item">Payments made with prepaid cards or
+                          gift cards may not be eligible for a refund.</li>
+                        <li class="refund__item">Accounts terminated for violating our
+                          Terms & Conditions are not eligible for a refund.</li>
+                      </ul>
+                    </section>
+  
+                    <!-- 5. Third-Party Purchases -->
+                    <section class="refund__section">
+                      <h3 class="refund__title">
+                        5. Third-Party Purchases
+                      </h3>
+  
+                      <p class="refund__text">
+                        If you purchased your subscription through a third-party platform (e.g., Apple App Store, Google
+                        Play Store), you must adhere to that platform's refund policy. We cannot process refunds for
+                        purchases made through third parties.
+                      </p>
+                    </section>
+  
+                    <!-- 6. Contact Us -->
+                    <section class="refund__section">
+                      <h3 class="refund__title">
+                        6. Contact Us
+                      </h3>
+  
+                      <p class="refund__text refund__text--mb0">
+                        If you have any questions about our Refund Policy, please contact us at
+                      </p>
+                      <a href="mailto:info@vpncitadel.com" class="terms-link"
+                        data-i18n="refund.contactUs.email">info@vpncitadel.com</a>
+                    </section>
+  
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__inner">
+              <a class="logo footer__logo" href="./index.html">
+                <img src="./images/logo.svg" alt="CitadelVPN Logo" width="190" height="57">
+              </a>
+              <address class="footer__address">
+                <a class="footer__link" href="mailto:info@vpncitadel.com">
+                  <div class="footer__icon blur-plate">
+                    <svg width="22" height="17">
+                      <use href="./images/sprite.svg#email"></use>
+                    </svg>
+                  </div>
+                  info@vpncitadel.com
+                </a>
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#telegramDark"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN Telegram channel
+                      </span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN Instagram page
+                      </span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#x"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN page on X
+                      </span>
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN Facebook page
+                      </span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#tikTok"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN TikTok account
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="menu__item">
+                  <a class="menu__link" href="terms-and-conditions.html">
+                    Terms and Conditions
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="privacy-policy.html">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="refund-policy.html">
+                    Refund Policy
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="about-us.html">
+                    About Us
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer__list-payments">
+                <li class="footer__item">
+                  <svg width="57" height="35">
+                    <use href="./images/sprite.svg#payPal"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="34">
+                    <use href="./images/sprite.svg#masterCard"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="34">
+                    <use href="./images/sprite.svg#visa"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="35">
+                    <use href="./images/sprite.svg#americanExpress"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="35">
+                    <use href="./images/sprite.svg#jcb"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="35">
+                    <use href="./images/sprite.svg#discover"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="35">
+                    <use href="./images/sprite.svg#bitcoin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </nav>
+            <span class="footer__copyright">
+              Copyright © 2025 Citadel VPN. All rights reserved.
+            </span>
+          </div>
+        </footer>
+  
+    <div class="cookie" id="cookie">
+      <div class="cookie__inner blur-plate">
+        <span class="cookie__cookie-img blur-plate">
+          <svg class="cookie__icon" width="24" height="24">
+            <use href="./images/sprite.svg#coockie"></use>
+          </svg>
+        </span>
+        <div class="cookie__content">
+          <h4 class="cookie__title">Cookie Notice.</h4>
+          <p class="cookie__text">
+            Our website uses
+            <a class="terms-link" href="./privacy-policy.html">Cookie Policy</a>
+            to ensure you have the best possible experience.
+          </p>
+        </div>
+    
+        <div class="cookie__actions">
+          <button class="cta cookie__accept">Accept</button>
+          <button class="cookie__close blur-plate" aria-label="Close">
+            <svg class="cookie__close-icon" width="11" height="11">
               <use href="./images/sprite.svg#menuBtnClose"></use>
             </svg>
           </button>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="./index.html">
-                Features
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="../index.html#plan">
-                Pricing
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./index.html">
-                Support
-              </a>
-            </li>
-            <!--   <li class="menu__item">
-                  <a class="menu__link" href="#" data-scroll>
-                      Blog
-                  </a>
-              </li>
-              <li class="menu__item">
-                  <a class="menu__link" href="#" data-scroll>
-                      News
-                  </a>
-                </li> -->
-          </ul>
-        </nav>
-  
-        <!-- lang menu -->
-        <div class="user-menu">
-          <div class="switcher-lang">
-            <button class="switcher-lang__btn blur-plate" type="button">
-              <div class="switcher-lang__box">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#en">
-                  </use>
-                </svg>
-                <span>En</span>
-              </div>
-              <svg class="icon" width="11" height="6">
-                <use href="./images/sprite.svg#arrowBottom">
-                </use>
-              </svg>
-            </button>
-            <div class="switcher-lang__dropdown blur-plate">
-              <a class="switcher-lang__link switcher-lang__link--active" href="./refund-policy.html">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#en">
-                  </use>
-                </svg>
-                <span>En</span>
-              </a>
-              <a class="switcher-lang__link" href="./ar/refund-policy.html">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#ar">
-                  </use>
-                </svg>
-                <span>عر</span>
-              </a>
-              <a class="switcher-lang__link" href="./ru/refund-policy.html">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#ru">
-                  </use>
-                </svg>
-                <span>Ру</span>
-              </a>
-            </div>
-          </div>
-          <a class="cta user-menu__cta" href="#">
-            Open VPN
-            <svg class="icon" width="20" height="20">
-              <use href="./images/sprite.svg#telegramLight">
-              </use>
-            </svg>
-          </a>
         </div>
-      </div>
-    </div>
-  </header>
-  <main class="main">
-
-    <section class="home">
-      <div class="container">
-        <div class="top">
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="./index.html">
-                  Home
-                </a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">
-                  Terms and Conditions
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="home__inner">
-          <div class="home__tab-nav">
-            <h1 class="home__tab-nav-title">Terms and Policy</h1>
-            <div class="tab-nav">
-              <a class="tab-nav__btn " href="./terms-and-conditions.html">
-                <span>Terms and Conditions</span>
-              </a>
-              <a class="tab-nav__btn" href="./privacy-policy.html">
-                <span>Privacy Policy</span>
-              </a>
-              <a class="tab-nav__btn tab-nav__btn--active" href="./refund-policy.html">
-                <span>Refund Policy</span>
-              </a>
-              <a class="tab-nav__btn" href="./about-us.html">
-                <span>About Us</span>
-              </a>
-            </div>
-          </div>
-          <div class="home__tabs-content tab">
-            <!-- Terms & Conditions -->
-            <div class="tab__item" id="btn_3">
-              <div class="tab__inner">
-                <div class="refund">
-                  <h2 class="refund__main-title">
-                    Refund Policy
-                  </h2>
-
-                  <!-- 1. 14-Day Money-Back Guarantee -->
-                  <section class="refund__section">
-                    <h3 class="refund__title">
-                      1. 14-Day Money-Back Guarantee
-                    </h3>
-
-                    <p class="refund__text">
-                      We are committed to your satisfaction. If you are not completely satisfied with our Services, you
-                      can request a full refund within 14 days of your initial purchase.
-                    </p>
-                  </section>
-
-                  <!-- 2. How to Request a Refund -->
-                  <section class="refund__section">
-                    <h3 class="refund__title">
-                      2. 2. How to Request a Refund
-                    </h3>
-                    <p class="refund__text">
-                      To request a refund, please contact our customer support team at <a
-                        href="mailto:info@vpncitadel.com" class="terms-link">info@vpncitadel.com</a> with your account
-                      information and the reason for your request. All refund requests are subject to approval by our
-                      support team and are reviewed on a case-by-case basis.
-                    </p>
-
-                  </section>
-
-                  <!-- 3. Refund Processing -->
-                  <section class="refund__section">
-                    <h3 class="refund__title">
-                      3. Refund Processing
-                    </h3>
-
-                    <p class="refund__text">
-                      Once your refund request is approved, we will process the refund to your original method of
-                      payment. Please allow 5-10
-                      business days for the refund to appear in your account.
-                    </p>
-
-                    <!-- 3.1 Account Information -->
-                    <h4 class="refund__subtitle">
-                      3.1. Cryptocurrency Refunds
-                    </h4>
-                    <p class="refund__text">
-                      For payments made with cryptocurrency, the refund will be processed in the same cryptocurrency.
-                      The refund amount will be equivalent to the USD value of your purchase at the time of the
-                      transaction. Any blockchain transaction fees associated with the refund will be your
-                      responsibility.
-                    </p>
-                  </section>
-
-                  <!-- 4. Exclusions -->
-                  <section class="refund__section">
-                    <h3 class="refund__title">
-                      4. Exclusions
-                    </h3>
-                    <ul class="refund__list">
-                      <li class="refund__item">This money-back guarantee applies
-                        only to your initial purchase.</li>
-                      <li class="refund__item">Refunds are not available for
-                        subscription renewals.</li>
-                      <li class="refund__item">Payments made with prepaid cards or
-                        gift cards may not be eligible for a refund.</li>
-                      <li class="refund__item">Accounts terminated for violating our
-                        Terms & Conditions are not eligible for a refund.</li>
-                    </ul>
-                  </section>
-
-                  <!-- 5. Third-Party Purchases -->
-                  <section class="refund__section">
-                    <h3 class="refund__title">
-                      5. Third-Party Purchases
-                    </h3>
-
-                    <p class="refund__text">
-                      If you purchased your subscription through a third-party platform (e.g., Apple App Store, Google
-                      Play Store), you must adhere to that platform's refund policy. We cannot process refunds for
-                      purchases made through third parties.
-                    </p>
-                  </section>
-
-                  <!-- 6. Contact Us -->
-                  <section class="refund__section">
-                    <h3 class="refund__title">
-                      6. Contact Us
-                    </h3>
-
-                    <p class="refund__text refund__text--mb0">
-                      If you have any questions about our Refund Policy, please contact us at
-                    </p>
-                    <a href="mailto:info@vpncitadel.com" class="terms-link"
-                      data-i18n="refund.contactUs.email">info@vpncitadel.com</a>
-                  </section>
-
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <nav class="footer__nav">
-          <a class="logo footer__logo" href="#">
-            <img src="./images/logo.svg" alt="CitadelVPN Logo" width="190" height="57">
-          </a>
-          <ul class="footer__menu">
-            <li class="menu__item">
-              <a class="menu__link" href="./terms-and-conditions.html">
-                Terms and Conditions
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./privacy-policy.html">
-                Privacy Policy
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./refund-policy.html">
-                Refund Policy
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./about-us.html">
-                About Us
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__info">
-          <address class="footer__address">
-            <a class="footer__link" href="mailto:info@vpncitadel.com">
-              <div class="footer__icon blur-plate">
-                <svg width="22" height="17">
-                  <use href="./images/sprite.svg#email"></use>
-                </svg>
-              </div>
-              info@vpncitadel.com
-            </a>
-            <ul class="social">
-              <li class="social__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#telegramDark"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN Telegram channel
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN Instagram page
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#x"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN page on X
-                  </span>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN Facebook page
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#tikTok"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN TikTok account
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </address>
-          <ul class="footer__list-payments">
-            <li class="footer__item">
-              <svg width="57" height="35">
-                <use href="./images/sprite.svg#payPal"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="34">
-                <use href="./images/sprite.svg#masterCard"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="34">
-                <use href="./images/sprite.svg#visa"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="35">
-                <use href="./images/sprite.svg#americanExpress"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="35">
-                <use href="./images/sprite.svg#jcb"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="35">
-                <use href="./images/sprite.svg#discover"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="35">
-                <use href="./images/sprite.svg#bitcoin"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <span class="footer__copyright">
-        Copyright © 2025 Citadel VPN. All rights reserved.
-      </span>
-    </div>
-  </footer>
-
-  <div class="cookie is-visible" id="cookie">
-    <div class="cookie__inner blur-plate">
-      <span class="cookie__cookie-img blur-plate">
-        <svg class="cookie__icon" width="24" height="24">
-          <use href="./images/sprite.svg#coockie"></use>
-        </svg>
-      </span>
-      <div class="cookie__content">
-        <h4 class="cookie__title">Cookie Notice.</h4>
-        <p class="cookie__text">
-          Our website uses
-          <a class="terms-link" href="./privacy-policy.html">Cookie Policy</a>
-          to ensure you have the best possible experience.
-        </p>
-      </div>
-  
-      <div class="cookie__actions">
-        <button class="cta cookie__accept">Accept</button>
-        <button class="cookie__close blur-plate" aria-label="Close">
-          <svg class="cookie__close-icon" width="11" height="11">
-            <use href="./images/sprite.svg#menuBtnClose"></use>
-          </svg>
-        </button>
       </div>
     </div>
   </div>

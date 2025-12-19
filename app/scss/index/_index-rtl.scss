@@ -49,6 +49,11 @@ html[dir="rtl"] {
   .plan__list-item {
     text-align: right;
   }
+  .apps {
+    &__title {
+      text-align: right;
+    }
+  }
   .engagement {
     &::after {
       left: 0;
@@ -63,6 +68,13 @@ html[dir="rtl"] {
     }
     &__cta {
       flex-direction: row-reverse;
+    }
+  }
+  @media (max-width: 1215px) {
+    .apps {
+      &__title {
+        text-align: center;
+      }
     }
   }
   @media(max-width: 767px) {

@@ -41,480 +41,481 @@
 </head>
 
 <body>
-  <header class="header" id="header" data-i18n-section="header">
-    <div class="container">
-      <div class="header__inner">
-        <a class="logo" href="./index.html">
-          <picture>
-            <source media="(max-width: 576px)" srcset="./images/header-logo-s.svg">
-            <img src="./images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
-          </picture>
-        </a>
-        <!-- menu  -->
-        <nav class="menu">
-          <button class="menu__btn blur-plate" type="button">
-            <svg class="menu__btn-icon" width="22" height="22">
-              <use href="./images/sprite.svg#menuBtn"></use>
-            </svg>
-            <svg class="menu__btn-icon-close" width="11" height="11">
+  <div class="wrapper">
+
+    <header class="header" id="header" data-i18n-section="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="./index.html">
+            <picture>
+              <source media="(max-width: 576px)" srcset="./images/header-logo-s.svg">
+              <img src="./images/logo.svg" alt="CitadelVPN Logo" width="153" height="46">
+            </picture>
+          </a>
+          <!-- menu  -->
+          <nav class="menu">
+            <button class="menu__btn blur-plate" type="button">
+              <svg class="menu__btn-icon" width="22" height="22">
+                <use href="./images/sprite.svg#menuBtn"></use>
+              </svg>
+              <svg class="menu__btn-icon-close" width="11" height="11">
+                <use href="./images/sprite.svg#menuBtnClose"></use>
+              </svg>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html">
+                  Features
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="../index.html#plan">
+                  Pricing
+                </a>
+              </li>
+              <li class="menu__item">
+                <a class="menu__link" href="./index.html">
+                  Support
+                </a>
+              </li>
+        <!--   <li class="menu__item">
+                  <a class="menu__link" href="#" data-scroll>
+                      Blog
+                  </a>
+              </li>
+              <li class="menu__item">
+                  <a class="menu__link" href="#" data-scroll>
+                      News
+                  </a>
+                </li> -->
+            </ul>
+          </nav>
+    
+          <!-- lang menu -->
+          <div class="user-menu">
+            <div class="switcher-lang">
+              <button class="switcher-lang__btn blur-plate" type="button">
+                <div class="switcher-lang__box">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#en">
+                    </use>
+                  </svg>
+                  <span>En</span>
+                </div>
+                <svg class="icon" width="11" height="6">
+                  <use href="./images/sprite.svg#arrowBottom">
+                  </use>
+                </svg>
+              </button>
+              <div class="switcher-lang__dropdown blur-plate">
+                <a class="switcher-lang__link switcher-lang__link--active" href="./about-us.html">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#en">
+                    </use>
+                  </svg>
+                  <span>En</span>
+                </a>
+                <a class="switcher-lang__link" href="./ar/about-us.html">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#ar">
+                    </use>
+                  </svg>
+                  <span>عر</span>
+                </a>
+                <a class="switcher-lang__link" href="./ru/about-us.html">
+                  <svg width="24" height="24">
+                    <use href="./images/sprite.svg#ru">
+                    </use>
+                  </svg>
+                  <span>Ру</span>
+                </a>
+              </div>
+            </div>
+            <a class="cta user-menu__cta" href="#">
+              Open VPN
+              <svg class="icon" width="20" height="20">
+                <use href="./images/sprite.svg#telegramLight">
+                </use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+  
+      <section class="home">
+        <div class="container">
+          <div class="top">
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="./index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">
+                    Terms and Conditions
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+  
+          <div class="home__inner">
+            <div class="home__tab-nav">
+              <h1 class="home__tab-nav-title">Terms and Policy</h1>
+              <div class="tab-nav">
+                <a class="tab-nav__btn " href="./terms-and-conditions.html">
+                  <span>Terms and Conditions</span>
+                </a>
+                <a class="tab-nav__btn" href="./privacy-policy.html">
+                  <span>Privacy Policy</span>
+                </a>
+                <a class="tab-nav__btn" href="./refund-policy.html">
+                  <span>Refund Policy</span>
+                </a>
+                <a class="tab-nav__btn tab-nav__btn--active" href="./about-us.html">
+                  <span>About Us</span>
+                </a>
+              </div>
+            </div>
+            <div class="home__tabs-content tab">
+              <!-- About us -->
+              <div class="tab__item" id="btn_4">
+                <div class="tab__inner">
+                  <div class="aboutUs">
+                    <h2 class="aboutUs__main-title">
+                      About Us
+                    </h2>
+  
+                    <!-- 1. Our Mission: Your Digital Freedom Fortress -->
+                    <section class="aboutUs__section">
+                      <h3 class="aboutUs__title">
+                        Our Mission: Your Digital Freedom Fortress
+                      </h3>
+  
+                      <p class="aboutUs__text">
+                        In an era where digital surveillance and censorship are on the rise, we believe that everyone has
+                        a right to a free and open internet. Our mission is to provide you with a powerful, secure, and
+                        easy-to-use tool to protect your online
+                        privacy and bypass restrictions. Citadel VPN is your fortress in the digital world.
+                      </p>
+                    </section>
+  
+                    <!-- 2. Who We Are -->
+                    <section class="aboutUs__section">
+                      <h3 class="aboutUs__title">
+                        Who We Are
+                      </h3>
+  
+                      <p class="aboutUs__text">
+                        We are a team of privacy advocates, cybersecurity experts, and technology enthusiasts dedicated to
+                        building a better
+                        internet. We were founded on the principles of privacy, security, and freedom. We believe that
+                        your data is your own,
+                        and we are committed to protecting it.
+                      </p>
+                    </section>
+  
+                    <!-- 3. What We Do -->
+                    <section class="aboutUs__section">
+                      <h3 class="aboutUs__title">
+                        What We Do
+                      </h3>
+  
+                      <p class="aboutUs__text">
+                        Citadel VPN provides a state-of-the-art VPN service built on the modern and efficient VLESS
+                        protocol. Our service is
+                        designed to be fast, reliable, and secure, allowing you to browse the web without borders.
+                        We are a Telegram-first service, offering a seamless and intuitive user experience through our
+                        powerful Telegram bot.
+                        This allows for quick and easy setup, management of your subscription, and access to our global
+                        network of servers.
+                      </p>
+                    </section>
+  
+                    <!-- 4. Our Values -->
+                    <section class="aboutUs__section">
+                      <h3 class="aboutUs__title">
+                        Our Values
+                      </h3>
+                      <ul class="aboutUs__list">
+                        <li class="aboutUs__item">
+                          <span class="aboutUs__text aboutUs__text--bold">Privacy:</span>
+                          <span class="aboutUs__text">
+                            Your privacy is our top priority. We have a strict no-logs policy, meaning we never track,
+                            store, or share your
+                            online activity.</span>
+                        </li>
+                        <li class="aboutUs__item">
+                          <span class="aboutUs__text aboutUs__text--bold">
+                            Security:
+                          </span>
+                          <span class="aboutUs__text">
+                            We use military-grade encryption and the latest VPN protocols to keep your data safe from
+                            prying eyes.
+                          </span>
+                        </li>
+                        <li class="refund__item">
+                          <span class="aboutUs__text aboutUs__text--bold">
+                            Freedom:
+                          </span>
+                          <span class="aboutUs__text">
+                            We believe in an open internet for everyone. Our service helps you bypass censorship and
+                            access the content you want, wherever you are.
+                          </span>
+                        </li>
+                        <li class="aboutUs__item">
+                          <span class="aboutUs__text aboutUs__text--bold">
+                            Transparency:
+                          </span>
+                          <span class="aboutUs__text">
+                            We are committed to being open and honest with our users. We believe that trust is earned
+                            through
+                            transparency.
+                          </span>
+                        </li>
+                      </ul>
+                    </section>
+  
+                    <!-- 5. Why Choose Citadel VPN? -->
+                    <section class="aboutUs__section">
+                      <h3 class="aboutUs__title">
+                        Why Choose Citadel VPN?
+                      </h3>
+                      <ul class="aboutUs__list">
+                        <li class="aboutUs__item">
+                          <span class="aboutUs__text aboutUs__text--bold">
+                            Modern Technology:
+                          </span>
+                          <span class="aboutUs__text">
+                            We use the VLESS protocol, which is designed for performance and security.
+                          </span>
+                        </li>
+                        <li class="aboutUs__item">
+                          <span class="aboutUs__text aboutUs__text--bold">
+                            Telegram-First:
+                          </span>
+                          <span class="aboutUs__text">
+                            Manage your VPN directly from Telegram, one of the world's most popular and secure messaging
+                            apps.
+                          </span>
+                        </li>
+                        <li class="refund__item">
+                          <span class="aboutUs__text aboutUs__text--bold">
+                            Global Network:
+                          </span>
+                          <span class="aboutUs__text">
+                            Access our network of high-speed servers in locations around the world.
+                          </span>
+                        </li>
+                        <li class="aboutUs__item">
+                          <span class="aboutUs__text aboutUs__text--bold">
+                            No-Logs Policy:
+                          </span>
+                          <span class="aboutUs__text">
+                            We never log your activity. Your privacy is guaranteed.
+                          </span>
+                        </li>
+                        <li class="aboutUs__item">
+                          <span class="aboutUs__text aboutUs__text--bold">
+                            24/7 Support:
+                          </span>
+                          <span class="aboutUs__text">
+                            Our dedicated support team is always here to help you.
+                          </span>
+                        </li>
+                      </ul>
+                    </section>
+  
+                    <!-- 6. Join Us -->
+                    <section class="aboutUs__section">
+                      <h3 class="aboutUs__title">
+                        Join Us
+                      </h3>
+  
+                      <p class="aboutUs__text">
+                        Take control of your digital life. Join the Citadel VPN community and experience the internet
+                        without borders.
+                      </p>
+                      <p class="aboutUs__text">
+                        Contact Us: <a href="mailto:info@vpncitadel.com" class="terms-link">
+                          info@vpncitadel.com
+                        </a>
+                      </p>
+  
+                    </section>
+                  </div>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__inner">
+              <a class="logo footer__logo" href="./index.html">
+                <img src="./images/logo.svg" alt="CitadelVPN Logo" width="190" height="57">
+              </a>
+              <address class="footer__address">
+                <a class="footer__link" href="mailto:info@vpncitadel.com">
+                  <div class="footer__icon blur-plate">
+                    <svg width="22" height="17">
+                      <use href="./images/sprite.svg#email"></use>
+                    </svg>
+                  </div>
+                  info@vpncitadel.com
+                </a>
+                <ul class="social">
+                  <li class="social__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#telegramDark"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN Telegram channel
+                      </span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#instagram"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN Instagram page
+                      </span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#x"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN page on X
+                      </span>
+                    </a>
+                  </li>
+                  <li class="footer__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#facebook"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN Facebook page
+                      </span>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
+                      <svg width="24" height="24">
+                        <use href="./images/sprite.svg#tikTok"></use>
+                      </svg>
+                      <span class="visually-hidden">
+                        Go to Citadel VPN TikTok account
+                      </span>
+                    </a>
+                  </li>
+                </ul>
+              </address>
+            </div>
+            <nav class="footer__nav">
+              <ul class="footer__menu">
+                <li class="menu__item">
+                  <a class="menu__link" href="terms-and-conditions.html">
+                    Terms and Conditions
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="privacy-policy.html">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="refund-policy.html">
+                    Refund Policy
+                  </a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="about-us.html">
+                    About Us
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer__list-payments">
+                <li class="footer__item">
+                  <svg width="57" height="35">
+                    <use href="./images/sprite.svg#payPal"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="34">
+                    <use href="./images/sprite.svg#masterCard"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="34">
+                    <use href="./images/sprite.svg#visa"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="35">
+                    <use href="./images/sprite.svg#americanExpress"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="35">
+                    <use href="./images/sprite.svg#jcb"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="35">
+                    <use href="./images/sprite.svg#discover"></use>
+                  </svg>
+                </li>
+                <li class="footer__item">
+                  <svg width="61" height="35">
+                    <use href="./images/sprite.svg#bitcoin"></use>
+                  </svg>
+                </li>
+              </ul>
+            </nav>
+            <span class="footer__copyright">
+              Copyright © 2025 Citadel VPN. All rights reserved.
+            </span>
+          </div>
+        </footer>
+  
+    <div class="cookie" id="cookie">
+      <div class="cookie__inner blur-plate">
+        <span class="cookie__cookie-img blur-plate">
+          <svg class="cookie__icon" width="24" height="24">
+            <use href="./images/sprite.svg#coockie"></use>
+          </svg>
+        </span>
+        <div class="cookie__content">
+          <h4 class="cookie__title">Cookie Notice.</h4>
+          <p class="cookie__text">
+            Our website uses
+            <a class="terms-link" href="./privacy-policy.html">Cookie Policy</a>
+            to ensure you have the best possible experience.
+          </p>
+        </div>
+    
+        <div class="cookie__actions">
+          <button class="cta cookie__accept">Accept</button>
+          <button class="cookie__close blur-plate" aria-label="Close">
+            <svg class="cookie__close-icon" width="11" height="11">
               <use href="./images/sprite.svg#menuBtnClose"></use>
             </svg>
           </button>
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a class="menu__link" href="./index.html">
-                Features
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="../index.html#plan">
-                Pricing
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./index.html">
-                Support
-              </a>
-            </li>
-      <!--   <li class="menu__item">
-                <a class="menu__link" href="#" data-scroll>
-                    Blog
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#" data-scroll>
-                    News
-                </a>
-              </li> -->
-          </ul>
-        </nav>
-  
-        <!-- lang menu -->
-        <div class="user-menu">
-          <div class="switcher-lang">
-            <button class="switcher-lang__btn blur-plate" type="button">
-              <div class="switcher-lang__box">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#en">
-                  </use>
-                </svg>
-                <span>En</span>
-              </div>
-              <svg class="icon" width="11" height="6">
-                <use href="./images/sprite.svg#arrowBottom">
-                </use>
-              </svg>
-            </button>
-            <div class="switcher-lang__dropdown blur-plate">
-              <a class="switcher-lang__link switcher-lang__link--active" href="./about-us.html">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#en">
-                  </use>
-                </svg>
-                <span>En</span>
-              </a>
-              <a class="switcher-lang__link" href="./ar/about-us.html">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#ar">
-                  </use>
-                </svg>
-                <span>عر</span>
-              </a>
-              <a class="switcher-lang__link" href="./ru/about-us.html">
-                <svg width="24" height="24">
-                  <use href="./images/sprite.svg#ru">
-                  </use>
-                </svg>
-                <span>Ру</span>
-              </a>
-            </div>
-          </div>
-          <a class="cta user-menu__cta" href="#">
-            Open VPN
-            <svg class="icon" width="20" height="20">
-              <use href="./images/sprite.svg#telegramLight">
-              </use>
-            </svg>
-          </a>
         </div>
-      </div>
-    </div>
-  </header>
-  <main class="main">
-
-    <section class="home">
-      <div class="container">
-        <div class="top">
-          <div class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="./index.html">
-                  Home
-                </a>
-              </li>
-              <li class="breadcrumbs__item">
-                <a class="breadcrumbs__link" href="#">
-                  Terms and Conditions
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="home__inner">
-          <div class="home__tab-nav">
-            <h1 class="home__tab-nav-title">Terms and Policy</h1>
-            <div class="tab-nav">
-              <a class="tab-nav__btn " href="./terms-and-conditions.html">
-                <span>Terms and Conditions</span>
-              </a>
-              <a class="tab-nav__btn" href="./privacy-policy.html">
-                <span>Privacy Policy</span>
-              </a>
-              <a class="tab-nav__btn" href="./refund-policy.html">
-                <span>Refund Policy</span>
-              </a>
-              <a class="tab-nav__btn tab-nav__btn--active" href="./about-us.html">
-                <span>About Us</span>
-              </a>
-            </div>
-          </div>
-          <div class="home__tabs-content tab">
-            <!-- About us -->
-            <div class="tab__item" id="btn_4">
-              <div class="tab__inner">
-                <div class="aboutUs">
-                  <h2 class="aboutUs__main-title">
-                    About Us
-                  </h2>
-
-                  <!-- 1. Our Mission: Your Digital Freedom Fortress -->
-                  <section class="aboutUs__section">
-                    <h3 class="aboutUs__title">
-                      Our Mission: Your Digital Freedom Fortress
-                    </h3>
-
-                    <p class="aboutUs__text">
-                      In an era where digital surveillance and censorship are on the rise, we believe that everyone has
-                      a right to a free and open internet. Our mission is to provide you with a powerful, secure, and
-                      easy-to-use tool to protect your online
-                      privacy and bypass restrictions. Citadel VPN is your fortress in the digital world.
-                    </p>
-                  </section>
-
-                  <!-- 2. Who We Are -->
-                  <section class="aboutUs__section">
-                    <h3 class="aboutUs__title">
-                      Who We Are
-                    </h3>
-
-                    <p class="aboutUs__text">
-                      We are a team of privacy advocates, cybersecurity experts, and technology enthusiasts dedicated to
-                      building a better
-                      internet. We were founded on the principles of privacy, security, and freedom. We believe that
-                      your data is your own,
-                      and we are committed to protecting it.
-                    </p>
-                  </section>
-
-                  <!-- 3. What We Do -->
-                  <section class="aboutUs__section">
-                    <h3 class="aboutUs__title">
-                      What We Do
-                    </h3>
-
-                    <p class="aboutUs__text">
-                      Citadel VPN provides a state-of-the-art VPN service built on the modern and efficient VLESS
-                      protocol. Our service is
-                      designed to be fast, reliable, and secure, allowing you to browse the web without borders.
-                      We are a Telegram-first service, offering a seamless and intuitive user experience through our
-                      powerful Telegram bot.
-                      This allows for quick and easy setup, management of your subscription, and access to our global
-                      network of servers.
-                    </p>
-                  </section>
-
-                  <!-- 4. Our Values -->
-                  <section class="aboutUs__section">
-                    <h3 class="aboutUs__title">
-                      Our Values
-                    </h3>
-                    <ul class="aboutUs__list">
-                      <li class="aboutUs__item">
-                        <span class="aboutUs__text aboutUs__text--bold">Privacy:</span>
-                        <span class="aboutUs__text">
-                          Your privacy is our top priority. We have a strict no-logs policy, meaning we never track,
-                          store, or share your
-                          online activity.</span>
-                      </li>
-                      <li class="aboutUs__item">
-                        <span class="aboutUs__text aboutUs__text--bold">
-                          Security:
-                        </span>
-                        <span class="aboutUs__text">
-                          We use military-grade encryption and the latest VPN protocols to keep your data safe from
-                          prying eyes.
-                        </span>
-                      </li>
-                      <li class="refund__item">
-                        <span class="aboutUs__text aboutUs__text--bold">
-                          Freedom:
-                        </span>
-                        <span class="aboutUs__text">
-                          We believe in an open internet for everyone. Our service helps you bypass censorship and
-                          access the content you want, wherever you are.
-                        </span>
-                      </li>
-                      <li class="aboutUs__item">
-                        <span class="aboutUs__text aboutUs__text--bold">
-                          Transparency:
-                        </span>
-                        <span class="aboutUs__text">
-                          We are committed to being open and honest with our users. We believe that trust is earned
-                          through
-                          transparency.
-                        </span>
-                      </li>
-                    </ul>
-                  </section>
-
-                  <!-- 5. Why Choose Citadel VPN? -->
-                  <section class="aboutUs__section">
-                    <h3 class="aboutUs__title">
-                      Why Choose Citadel VPN?
-                    </h3>
-                    <ul class="aboutUs__list">
-                      <li class="aboutUs__item">
-                        <span class="aboutUs__text aboutUs__text--bold">
-                          Modern Technology:
-                        </span>
-                        <span class="aboutUs__text">
-                          We use the VLESS protocol, which is designed for performance and security.
-                        </span>
-                      </li>
-                      <li class="aboutUs__item">
-                        <span class="aboutUs__text aboutUs__text--bold">
-                          Telegram-First:
-                        </span>
-                        <span class="aboutUs__text">
-                          Manage your VPN directly from Telegram, one of the world's most popular and secure messaging
-                          apps.
-                        </span>
-                      </li>
-                      <li class="refund__item">
-                        <span class="aboutUs__text aboutUs__text--bold">
-                          Global Network:
-                        </span>
-                        <span class="aboutUs__text">
-                          Access our network of high-speed servers in locations around the world.
-                        </span>
-                      </li>
-                      <li class="aboutUs__item">
-                        <span class="aboutUs__text aboutUs__text--bold">
-                          No-Logs Policy:
-                        </span>
-                        <span class="aboutUs__text">
-                          We never log your activity. Your privacy is guaranteed.
-                        </span>
-                      </li>
-                      <li class="aboutUs__item">
-                        <span class="aboutUs__text aboutUs__text--bold">
-                          24/7 Support:
-                        </span>
-                        <span class="aboutUs__text">
-                          Our dedicated support team is always here to help you.
-                        </span>
-                      </li>
-                    </ul>
-                  </section>
-
-                  <!-- 6. Join Us -->
-                  <section class="aboutUs__section">
-                    <h3 class="aboutUs__title">
-                      Join Us
-                    </h3>
-
-                    <p class="aboutUs__text">
-                      Take control of your digital life. Join the Citadel VPN community and experience the internet
-                      without borders.
-                    </p>
-                    <p class="aboutUs__text">
-                      Contact Us: <a href="mailto:info@vpncitadel.com" class="terms-link">
-                        info@vpncitadel.com
-                      </a>
-                    </p>
-
-                  </section>
-                </div>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <nav class="footer__nav">
-          <a class="logo footer__logo" href="#">
-            <img src="./images/logo.svg" alt="CitadelVPN Logo" width="190" height="57">
-          </a>
-          <ul class="footer__menu">
-            <li class="menu__item">
-              <a class="menu__link" href="./terms-and-conditions.html">
-                Terms and Conditions
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./privacy-policy.html">
-                Privacy Policy
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./refund-policy.html">
-                Refund Policy
-              </a>
-            </li>
-            <li class="menu__item">
-              <a class="menu__link" href="./about-us.html">
-                About Us
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div class="footer__info">
-          <address class="footer__address">
-            <a class="footer__link" href="mailto:info@vpncitadel.com">
-              <div class="footer__icon blur-plate">
-                <svg width="22" height="17">
-                  <use href="./images/sprite.svg#email"></use>
-                </svg>
-              </div>
-              info@vpncitadel.com
-            </a>
-            <ul class="social">
-              <li class="social__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#telegramDark"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN Telegram channel
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#instagram"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN Instagram page
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#x"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN page on X
-                  </span>
-                </a>
-              </li>
-              <li class="footer__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#facebook"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN Facebook page
-                  </span>
-                </a>
-              </li>
-              <li class="social__item">
-                <a class="social__link blur-plate" href="https://t.me/CitadelVPNBot">
-                  <svg width="24" height="24">
-                    <use href="./images/sprite.svg#tikTok"></use>
-                  </svg>
-                  <span class="visually-hidden">
-                    Go to Citadel VPN TikTok account
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </address>
-          <ul class="footer__list-payments">
-            <li class="footer__item">
-              <svg width="57" height="35">
-                <use href="./images/sprite.svg#payPal"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="34">
-                <use href="./images/sprite.svg#masterCard"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="34">
-                <use href="./images/sprite.svg#visa"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="35">
-                <use href="./images/sprite.svg#americanExpress"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="35">
-                <use href="./images/sprite.svg#jcb"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="35">
-                <use href="./images/sprite.svg#discover"></use>
-              </svg>
-            </li>
-            <li class="footer__item">
-              <svg width="61" height="35">
-                <use href="./images/sprite.svg#bitcoin"></use>
-              </svg>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <span class="footer__copyright">
-        Copyright © 2025 Citadel VPN. All rights reserved.
-      </span>
-    </div>
-  </footer>
-
-  <div class="cookie is-visible" id="cookie">
-    <div class="cookie__inner blur-plate">
-      <span class="cookie__cookie-img blur-plate">
-        <svg class="cookie__icon" width="24" height="24">
-          <use href="./images/sprite.svg#coockie"></use>
-        </svg>
-      </span>
-      <div class="cookie__content">
-        <h4 class="cookie__title">Cookie Notice.</h4>
-        <p class="cookie__text">
-          Our website uses
-          <a class="terms-link" href="./privacy-policy.html">Cookie Policy</a>
-          to ensure you have the best possible experience.
-        </p>
-      </div>
-  
-      <div class="cookie__actions">
-        <button class="cta cookie__accept">Accept</button>
-        <button class="cookie__close blur-plate" aria-label="Close">
-          <svg class="cookie__close-icon" width="11" height="11">
-            <use href="./images/sprite.svg#menuBtnClose"></use>
-          </svg>
-        </button>
       </div>
     </div>
   </div>
