@@ -281,23 +281,29 @@ accordionButtons.forEach(button => {
 
 /* cookie  */
 const cookie = document.getElementById('cookie');
-const acceptBtn = cookie.querySelector('.cookie__accept');
-const closeBtn = cookie.querySelector('.cookie__close');
+const acceptCookieBtn = cookie.querySelector('.cookie__accept');
+const closeCookieBtn = cookie.querySelector('.cookie__close');
 
-// если пользователь уже согласился — ничего не делаем
-if (!localStorage.getItem('cookieAccepted')) {
+const COOKIE_KEY = 'cookieConsent';
+// еси пользователь уже делал выбор, тогда ничего не делаю
+if(localStorage.getItem(COOKIE_KEY) === null ) {
   setTimeout(() => {
     cookie.classList.add('is-visible');
   }, 4000);
 }
 
-const hideCookie = () => {
-  localStorage.setItem('cookieAccepted', 'true');
+// если пользватель согласился
+const acceptCookie = ()=> {
+  localStorage.setItem(COOKIE_KEY, 'true');
   cookie.classList.remove('is-visible');
 };
 
-acceptBtn.addEventListener('click', hideCookie);
-closeBtn.addEventListener('click', hideCookie);
-
+// если пользваотель отказался
+const noCookie = ()=> {
+  localStorage.setItem(COOKIE_KEY, 'false');
+  cookie.classList.remove('is-visible');
+}
+acceptCookieBtn.addEventListener('click', acceptCookie);
+closeCookieBtn.addEventListener('click', noCookie);
 
 });
