@@ -314,7 +314,11 @@ body {
 
     &:focus {
         box-shadow: 0 -6px 10px $light-opacity-23 inset,
-            0 0 16px $light-900-opacity-75;
+        0 0 16px $light-900-opacity-75;
+      &::before {
+        transition: all .3s;
+        inset: 10px 12px;
+      }
     }
     &:active {
       &::before {
