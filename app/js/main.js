@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', () => {
   // ===== MENU =====
   const MENUBTN = document.querySelector(".menu__btn");
   const MENU = document.querySelector('.menu__list');
-  const goTop = document.querySelector('.go-top')
   MENUBTN.addEventListener("click", () => {
     if (MENUBTN) {
       openMenu();
@@ -48,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!targetElement) return;
 
     const headerHeght = document.querySelector('#header').offsetHeight;
-    const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeght;
+    const top = targetElement.getBoundingClientRect().top + window.scrollY - (headerHeght + 80);
 
     window.scrollTo({
       top: top,
@@ -57,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* При скроле меняется хедер и активация кнопки НА ВЕРХ */
-  let isScrolled = false;
+ /*  let isScrolled = false;
   const headerScroll = () => {
     const header = document.querySelector('.header');
     const headerHeght = header.offsetHeight;
@@ -72,48 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   window.addEventListener('scroll', headerScroll);
 
-  /* EO IP MAP HIGHLIGHT */
-
-  // підсвітка флага на карте
-  /*  fetch('https://ipwho.is/')
-     .then(res => res.json())
-     .then(data => {
-       const countryCode = data.country_code; // Наприклад UA, PL, DE, US...
-       const code = data.country_code;
- 
-       // Вибираємо всі кола країни (бо їх 6 штук на одну)
-       const flags = document.querySelectorAll(
-         `.map-flag[data-country="${countryCode}"]`
-       );
- 
-       // Додаємо клас is-active кожному колу
-       flags.forEach(flag => {
-         flag.classList.add('is-active');
-       });
- 
- 
-         if (['RU', 'BY', 'KZ', 'UA'].includes(code)) {
-           localStorage.setItem(LANG_KEY, 'ru');
-           //location.replace('/ru/index.html');
-           return;
-         }
- 
-         if (['SA', 'AE', 'EG', 'QA', 'KW'].includes(code)) {
-           localStorage.setItem(LANG_KEY, 'ar');
-           //location.replace('/ar/index.html');
-           return;
-         }
- 
-         // Европа и все остальные — EN
-         localStorage.setItem(LANG_KEY, 'en');
- 
-       console.log('GeoIP data:', data);
-       console.log('Country:', data.country);
-       console.log('Country code:', data.country_code);
-     })
-     .catch(err => {
-       console.error('GeoIP error', err);
-     }); */
 
   // Fixed header on scroll
   const header = document.getElementById('header');
@@ -125,7 +82,33 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       header.classList.remove('is-fixed');
     }
-  });
+  }); */
+  const header = document.getElementById('header');
+const goTop = document.querySelector('.go-top');
+
+const SCROLL_FIXED_THRESHOLD = 150;
+
+const headerScroll = () => {
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  const headerHeight = header.offsetHeight;
+
+  // Кнопка "вверх"
+  if (scrollPosition > headerHeight) {
+    goTop.classList.add('go-top--active');
+  } else {
+    goTop.classList.remove('go-top--active');
+  }
+
+  // Фиксированный header
+  if (scrollPosition >= SCROLL_FIXED_THRESHOLD) {
+    header.classList.add('is-fixed');
+  } else {
+    header.classList.remove('is-fixed');
+  }
+};
+
+window.addEventListener('scroll', headerScroll);
+
 
   /*  FAQ ACCORDION  */
 
@@ -314,45 +297,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* cookie  */
-  const cookie = document.getElementById('cookie');
-  const acceptCookieBtn = cookie.querySelector('.cookie__accept');
-  const closeCookieBtn = cookie.querySelector('.cookie__close');
+const cookie = document.getElementById('cookie');
+const acceptCookieBtn = cookie.querySelector('.cookie__accept');
+const closeCookieBtn = cookie.querySelector('.cookie__close');
 
-  const COOKIE_KEY = 'cookieConsent';
-  // еси пользователь уже делал выбор, тогда ничего не делаю
-  if (localStorage.getItem(COOKIE_KEY) === null) {
-    setTimeout(() => {
-      cookie.classList.add('is-visible');
-    }, 4000);
-  }
+const COOKIE_KEY = 'cookieConsent';
+// еси пользователь уже делал выбор, тогда ничего не делаю
+if(localStorage.getItem(COOKIE_KEY) === null ) {
+  setTimeout(() => {
+    cookie.classList.add('is-visible');
+  }, 4000);
+}
 
-  // если пользватель согласился
-  const acceptCookie = () => {
-    localStorage.setItem(COOKIE_KEY, 'true');
-    cookie.classList.remove('is-visible');
-  };
+// если пользватель согласился
+const acceptCookie = ()=> {
+  localStorage.setItem(COOKIE_KEY, 'true');
+  cookie.classList.remove('is-visible');
+};
 
-  // если пользваотель отказался
-  const noCookie = () => {
-    localStorage.setItem(COOKIE_KEY, 'false');
-    cookie.classList.remove('is-visible');
-  }
-  acceptCookieBtn.addEventListener('click', acceptCookie);
-  closeCookieBtn.addEventListener('click', noCookie);
+// если пользваотель отказался
+const noCookie = ()=> {
+  localStorage.setItem(COOKIE_KEY, 'false');
+  cookie.classList.remove('is-visible');
+}
+acceptCookieBtn.addEventListener('click', acceptCookie);
+closeCookieBtn.addEventListener('click', noCookie);
 
 
 
-  document.querySelectorAll('.switcher-lang__link').forEach(link => {
-    link.addEventListener('click', () => {
-      const lang = link.getAttribute('href').includes('/ru/')
-        ? 'ru'
-        : link.getAttribute('href').includes('/ar/')
-          ? 'ar'
-          : 'en';
+document.querySelectorAll('.switcher-lang__link').forEach(link => {
+  link.addEventListener('click', () => {
+    const lang = link.getAttribute('href').includes('/ru/')
+      ? 'ru'
+      : link.getAttribute('href').includes('/ar/')
+      ? 'ar'
+      : 'en';
 
-      localStorage.setItem('site_lang', lang);
-    });
+    localStorage.setItem('site_lang', lang);
   });
+});
 
 
   /* Localization */
