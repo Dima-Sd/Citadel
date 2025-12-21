@@ -148,7 +148,7 @@ body {
   &::before {
     position: absolute;
     content: '';
-    background-image: url('../images/reviews-bg.png');
+    background-image: url('../images/reviews-bg.webp');
     background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
@@ -162,7 +162,7 @@ body {
   &::after {
     position: absolute;
     content: '';
-    background-image: url('../images/app-bg.png');
+    background-image: url('../images/app-bg.webp');
     background-size: contain;
     background-position: center bottom;
     background-repeat: no-repeat;
