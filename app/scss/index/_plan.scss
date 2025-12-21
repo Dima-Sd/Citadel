@@ -26,6 +26,20 @@
     &__item-wrapper {
         padding-top: 141px;
         position: relative;
+        transition: transform 0.5s;
+
+        &:hover {
+            transform: translateY(-6px);
+
+            &::before {
+                transform: translateX(-50%) translateY(-6px);
+            }
+
+            .plan__circle {
+                transform: translateX(-50%) translateY(0);
+                opacity: 1;
+            }
+        }
 
         &::before {
             content: "";
@@ -40,6 +54,7 @@
             background-size: cover;
             background-repeat: no-repeat;
             background-image: url('../images/plans/robotTrial.webp');
+            transition: transform 0.5s;
         }
 
         &--monthly::before {
@@ -66,21 +81,11 @@
         backdrop-filter: blur(16px);
         z-index: 1;
         height: 100%;
-
-
-        &:hover {
-            transform: translateY(-6px);
-
-            .plan__circle {
-                transform: translateX(-50%) translateY(0);
-                opacity: 1;
-            }
-        }
     }
 
     &__circle {
         position: absolute;
-        top: -50px;
+        top: 25px;
         left: 50%;
         transform: translateX(-50%) translateY(30px);
         width: 100px;

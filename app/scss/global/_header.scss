@@ -58,6 +58,7 @@
   }
 
   &__link {
+    display: inline-block;
     border-bottom: 1px solid transparent;
     transition: color 0.3s, text-shadow 0.3s, border-color 0.3s;
 

@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', () => {
     .querySelectorAll('.metric-card, .metrics')
     .forEach(el => metricsObserver.observe(el));
 
-  /* ================= REVIEWS SLIDER (ORIGINAL, НЕ ЧІПАЄМО) ================= */
+  /* ================= REVIEWS SLIDER  ================= */
 
   if (typeof Swiper !== 'undefined') {
     const reviewsSlider = document.querySelector('.reviews-slider');
@@ -302,31 +302,84 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ================= GEO ================= */
+/* ================= GEO + LOCALIZATION (FINAL) ================= */
 
-  const LANG_KEY = 'siteLang';
+const LANG_KEY = 'siteLang';
+
+(function initGeo() {
+  // Перевірка fetch
+  if (typeof fetch !== 'function') {
+    console.warn('Fetch is not supported');
+    return;
+  }
 
   fetch('https://ipwho.is/')
-    .then(res => res.json())
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('GeoIP request failed');
+      }
+      return response.json();
+    })
     .then(data => {
-      if (!data?.country_code) return;
+      // Базова перевірка відповіді
+      if (!data || data.success !== true || !data.country_code) {
+        console.warn('GeoIP invalid data:', data);
+        return;
+      }
 
+      const countryCode = data.country_code; // UA, PL, DE, SA...
+
+      console.log('GeoIP country:', countryCode);
+
+      /* ===== 1. ПІДСВІТКА КРАЇНИ НА МАПІ ===== */
+      const flags = document.querySelectorAll(
+        `.map-flag[data-country="${countryCode}"]`
+      );
+
+      if (flags.length) {
+        flags.forEach(flag => flag.classList.add('is-active'));
+      }
+
+      /* ===== 2. ПЕРЕВІРКА ЗБЕРЕЖЕНОЇ МОВИ ===== */
       const savedLang = localStorage.getItem(LANG_KEY);
-      if (savedLang) return;
+      if (savedLang) {
+        // Мова вже вибрана — гео тільки для мапи
+        return;
+      }
 
+      /* ===== 3. ВИЗНАЧЕННЯ МОВИ ПО РЕГІОНУ ===== */
       let targetLang = 'en';
 
-      if (['RU', 'BY', 'KZ', 'UA'].includes(data.country_code)) targetLang = 'ru';
-      if (['SA', 'AE', 'EG', 'QA', 'KW'].includes(data.country_code)) targetLang = 'ar';
+      // RU-регіон
+      if (['RU', 'BY', 'KZ', 'UA'].includes(countryCode)) {
+        targetLang = 'ru';
+      }
+
+      // AR-регіон
+      if (['SA', 'AE', 'EG', 'QA', 'KW'].includes(countryCode)) {
+        targetLang = 'ar';
+      }
 
       localStorage.setItem(LANG_KEY, targetLang);
 
-      if (targetLang === 'ru' && !location.pathname.startsWith('/ru/')) {
-        location.replace('/ru/index.html');
+      /* ===== 4. РЕДІРЕКТ (ЛИШЕ ЯКЩО НЕ ТАМ) ===== */
+      const path = window.location.pathname;
+
+      if (targetLang === 'ru' && !path.startsWith('/ru/')) {
+        window.location.replace('/ru/index.html');
+        return;
       }
-      if (targetLang === 'ar' && !location.pathname.startsWith('/ar/')) {
-        location.replace('/ar/index.html');
+
+      if (targetLang === 'ar' && !path.startsWith('/ar/')) {
+        window.location.replace('/ar/index.html');
+        return;
       }
+
+      // EN — залишаємося на поточній сторінці
     })
-    .catch(() => {});
+    .catch(error => {
+      console.warn('GeoIP error:', error);
+    });
+})();
+
 });
