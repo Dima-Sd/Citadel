@@ -128,7 +128,7 @@ body {
     position: absolute;
     inset: 0;
     pointer-events: none;
-    background:
+/*     background:
       /// центер
       radial-gradient(ellipse at center,
         rgba(13, 27, 42, 0) 0%,
@@ -151,7 +151,7 @@ body {
 
       linear-gradient(0deg,
         #0D1B2A 0%,
-        rgba(13, 27, 42, 0) 40%);
+        rgba(13, 27, 42, 0) 40%); */
    
     z-index: -1;
   }
@@ -481,7 +481,11 @@ body {
   }
   .bottom-wrapper {
       &::before {
-        background-position: center top;
+        background-position: center center;
+        top: -50%;
+      }
+      &::after {
+        display: none;
       }
     }
 }
@@ -505,6 +509,12 @@ body {
         top: -78px;
       }
     }
+   .middle-wrapper {
+    &__bg {
+      top: 35%; 
+      height: 50%;
+    }
+   }
   .sub-middle-wrapper {
       &__app {
         top: 0;
