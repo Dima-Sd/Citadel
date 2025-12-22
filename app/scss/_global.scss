@@ -52,6 +52,7 @@ body {
 .wrapper {
   position: relative;
   overflow: hidden;
+
 }
 
 .top-wrapper {
@@ -67,7 +68,7 @@ body {
     left: 0;
     opacity: 30%;
     z-index: -1;
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(../images/hero-bg.webp);
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,7 +98,7 @@ body {
   position: relative;
 
   &::before {
-    background-image: url(../images/sand-bg.jpg);
+    background-image: url(../images/sand-bg.webp);
     background-position: center top;
     background-size: cover;
     background-repeat: no-repeat;
@@ -226,8 +227,8 @@ body {
   &::before {
     position: absolute;
     content: '';
-    background-image: url('../images/bottom-wrapper-bg.png');
-    background-position: center center;
+    background-image: url('../images/bottom-wrapper-bg.webp');
+    background-position: center top;
     background-size: contain;
     background-repeat: no-repeat;
     width: 100%;
