@@ -468,7 +468,23 @@ body {
     pointer-events: all;
   }
 }
-
+@media(max-width: 992px) {
+  .sub-middle-wrapper {
+    &__top {
+      display: none;
+    }
+    &__app {
+      top: 50%;
+      transform: translateY(-50%);
+      bottom: 0px;
+    }
+  }
+  .bottom-wrapper {
+      &::before {
+        background-position: center top;
+      }
+    }
+}
 @media(max-width: 768px) {
   .title {
     font-size: 48px;
@@ -481,15 +497,30 @@ body {
 
 @media(max-width: 576px) {
   .top-wrapper {
-    &::before {
-      background-image: url('../images/hero-bg-mob.webp');
-      background-position: center center;
-      opacity: 1;
-      height: 939px;
-      top: -78px;
+      &::before {
+        background-image: url('../images/hero-bg-mob.webp');
+        background-position: center center;
+        opacity: 1;
+        height: 939px;
+        top: -78px;
+      }
     }
-  }
-
+  .sub-middle-wrapper {
+      &__app {
+        top: 0;
+        transform: translateY(0);
+        bottom: 0px;
+        height: 50%;
+      }
+    }
+    .bottom-wrapper {
+      &::before {
+       height: 50%;
+       top: -40%;
+       background-size: cover;
+      }
+    }
+    
   .title {
     font-size: 36px;
   }
