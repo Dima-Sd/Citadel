@@ -1,5 +1,6 @@
 .faq {
     padding-bottom: 80px;
+    isolation: isolate;
 
     &__title {
         text-align: left;
@@ -12,10 +13,13 @@
 
     &__item {
       border-radius: 32px;
+      position: relative;
+      overflow: hidden;
      
       &.blur-plate {
         padding: 8px 0 6px 0;
-        transition: padding-top 0.3s, padding-bottom 0.3s;
+       transition: padding 0.3s;
+      
       }
       &::after {
           padding: 1px;
@@ -39,7 +43,7 @@
         padding: 0px 24px 0px 24px;
         max-height: 0;
         overflow: hidden;
-        transition: max-height 0.3s, padding-top 0.3s, padding-bottom 0.3s;
+       transition: max-height 0.3s, padding 0.3s;
         &.is-open {
           max-height: fit-content;
           height: auto;
@@ -53,7 +57,7 @@
       justify-content: space-between;
       gap: 10px;
       width: 100%;
-      transition: padding-bottom 0.3s;
+      transition: padding 0.3s;
       text-align: left;
     }
 

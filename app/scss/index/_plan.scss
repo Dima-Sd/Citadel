@@ -49,9 +49,13 @@
     }
 
     &__item-wrapper {
+        max-width: 279px;
+        width: 100%;
         padding-top: 141px;
         position: relative;
         transition: transform 0.5s;
+        flex: 0 0 279px;
+       isolation: isolate;
 
         &:hover {
             transform: translateY(-6px);
@@ -80,17 +84,21 @@
             background-repeat: no-repeat;
             background-image: url('../images/plans/robotTrial.webp');
             transition: transform 0.5s;
+            pointer-events: none;
         }
 
         &--monthly::before {
+          pointer-events: none;
             background-image: url('../images/plans/robotMonthly.webp');
         }
 
         &--semiannual::before {
+          pointer-events: none;
             background-image: url('../images/plans/robotSemiannual.webp');
         }
 
         &--annual::before {
+          pointer-events: none;
             background-image: url('../images/plans/robotAnnual.webp');
         }
 
@@ -99,13 +107,12 @@
     &__item {
         display: flex;
         flex-direction: column;
-        max-width: 279px;
-        width: 100%;
         position: relative;
         transition: transform 0.5s;
         backdrop-filter: blur(16px);
         z-index: 1;
         height: 100%;
+        isolation: isolate;
     }
 
     &__circle {
@@ -261,6 +268,15 @@
         }
     }
 }
+@media (max-width: 1240px) {
+  .plan {
+    &__item-wrapper {
+      max-width: 340px;
+      flex: 0 0 340px;
+    }
+  }
+}
+
 @media (max-width: 992px) {
   .plan {
     &::before {

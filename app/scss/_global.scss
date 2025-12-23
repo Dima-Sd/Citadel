@@ -418,6 +418,12 @@ body {
     pointer-events: all;
   }
 }
+
+@media (max-width: 1024px) {
+  .title {
+    font-size: 48px;
+  }
+}
 @media(max-width: 992px) {
   .sub-middle-wrapper {
     &__top {
@@ -440,9 +446,6 @@ body {
     }
 }
 @media(max-width: 768px) {
-  .title {
-    font-size: 48px;
-  }
 
   .section {
     padding-bottom: 112px;
