@@ -157,51 +157,6 @@ accordeons.forEach(item => {
     });
   };
 
-/*   const drawAnimatedRing = canvas => {
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const percent = Number(canvas.dataset.progress || 0) / 100;
-    const color = canvas.dataset.color || '#3DDC84';
-
-    const size = canvas.clientWidth;
-    const dpr = window.devicePixelRatio || 1;
-
-    canvas.width = size * dpr;
-    canvas.height = size * dpr;
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-    const center = size / 2;
-    const lineWidth = 12;
-    const radius = center - lineWidth / 2;
-
-    let current = 0;
-
-    const animate = () => {
-      ctx.clearRect(0, 0, size, size);
-      ctx.beginPath();
-      ctx.strokeStyle = color;
-      ctx.lineWidth = lineWidth;
-      ctx.lineCap = 'round';
-      ctx.arc(
-        center,
-        center,
-        radius,
-        -Math.PI / 2,
-        -Math.PI / 2 + Math.PI * 2 * current
-      );
-      ctx.stroke();
-
-      if (current < percent) {
-        current += 0.015;
-        requestAnimationFrame(animate);
-      }
-    };
-
-    animate();
-  };
- */
 
   const drawAnimatedRing = canvas => {
   if (!canvas) return;
