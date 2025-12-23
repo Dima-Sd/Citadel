@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* ================= FAQ ACCORDION ================= */
 
-  const accordionButtons = document.querySelectorAll('[data-button]');
+/*   const accordionButtons = document.querySelectorAll('[data-button]');
 
   accordionButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -109,28 +109,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const isOpen = item.classList.contains('is-open');
 
-      document.querySelectorAll('.faq__item.is-open').forEach(openItem => {
+      document.querySelectorAll('.faq__inner.is-open').forEach(openItem => {
         if (openItem === item) return;
         openItem.classList.remove('is-open');
         openItem.querySelector('.faq__answer')?.style.removeProperty('max-height');
         openItem.querySelector('.faq__icon')?.classList.remove('faq__icon--open');
-        openItem.querySelector('.faq__subtitle')?.style.removeProperty('margin-bottom');
+        //openItem.querySelector('.faq__subtitle')?.style.removeProperty('margin-bottom');
       });
 
       if (isOpen) {
         item.classList.remove('is-open');
         answer.style.removeProperty('max-height');
         icon.classList.remove('faq__icon--open');
-        subtitle.style.removeProperty('margin-bottom');
+       // subtitle.style.removeProperty('margin-bottom');
         return;
       }
 
       item.classList.add('is-open');
       answer.style.maxHeight = answer.scrollHeight + 'px';
       icon.classList.add('faq__icon--open');
-      subtitle.style.marginBottom = '12px';
+      //subtitle.style.marginBottom = '12px';
     });
+  }); */
+
+const accordeons = document.querySelectorAll("[data-accordion]");
+
+accordeons.forEach(item => {
+  const btn = item.querySelector(".faq__button");
+  const content = item.querySelector("[data-accordion-content]");
+  const icon = item.querySelector(".faq__icon");
+
+  btn.addEventListener("click", () => {
+    const isOpening = !item.classList.contains("is-open");
+
+    // Закрываем все
+    accordeons.forEach(acc => {
+      acc.classList.remove("is-open");
+
+      const inner = acc.querySelector("[data-accordion-content]");
+      inner.style.maxHeight = null;
+
+      acc.querySelector(".faq__icon")
+        .classList.remove("faq__icon--open");
+    });
+
+    // Открываем текущий
+    if (isOpening) {
+      item.classList.add("is-open");
+      content.style.maxHeight = content.scrollHeight + "px";
+      icon.classList.add("faq__icon--open");
+    }
   });
+});
+
+
 
   /* ================= METRICS ================= */
 

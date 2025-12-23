@@ -13,7 +13,7 @@ html[dir="rtl"] {
 
   .steps {
     .title {
-      text-align: right;
+      text-align: center;
     }
     &__info {
       text-align: center;
@@ -27,10 +27,6 @@ html[dir="rtl"] {
     }
   }
   .faq {
-    &__inner {
-      padding-right: 0;
-      padding-left: 50px;
-    }
     &__title {
       text-align: right;
     }
@@ -39,6 +35,9 @@ html[dir="rtl"] {
     }
     &__icon.faq__icon--open {
       transform: rotate(270deg);
+    }
+    &__button {
+      text-align: right;
     }
     &__button.active{
       .faq__icon {
@@ -52,6 +51,9 @@ html[dir="rtl"] {
   .apps {
     &__title {
       text-align: right;
+    }
+    &__list {
+      flex-direction: row-reverse;
     }
   }
   .engagement {
@@ -95,11 +97,11 @@ html[dir="rtl"] {
     }
   }
 
-    @media(max-width: 576px) {
-      .engagement {
-        &__cta {
-          font-size: 17px;
-        }
+  @media(max-width: 576px) {
+    .engagement {
+      &__cta {
+        font-size: 17px;
       }
     }
+  }
 }

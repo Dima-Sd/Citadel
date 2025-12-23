@@ -9,6 +9,10 @@
         text-align: left;
         margin-bottom: 12px;
     }
+    &__text {
+      font-size: 16px;
+      @include Inter-400;
+    }
 
     &__wrap {
         display: flex;
@@ -44,7 +48,7 @@
     &__subtitle {
         font-size: 28px;
         margin-bottom: 8px;
-        font-weight: 600;
+        @include RobotoCondensed-600;
     }
 
     &__descr {

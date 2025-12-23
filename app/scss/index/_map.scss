@@ -35,3 +35,14 @@
     /* мʼяке зникнення */
   }
 }
+
+@media (max-width: 440px) {
+  .map {
+    &__title {
+      margin: 0 auto;
+    }
+    .container {
+      padding: 0;
+    }
+  }
+}
