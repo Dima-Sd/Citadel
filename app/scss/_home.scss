@@ -131,14 +131,6 @@
   }
 }
 
-.tab {
-
-  &__inner {
-    display: flex;
-    align-items: stretch;
-  }
-
-}
 
 .tab-nav {
   display: flex;
@@ -244,7 +236,7 @@
 
   &__text {
     @include Inter-400;
-    font-size: 18px;
+    font-size: 16px;
     color: $light;
     margin-bottom: 22px;
 
