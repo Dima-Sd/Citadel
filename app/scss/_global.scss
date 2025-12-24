@@ -181,7 +181,7 @@ body {
     height: 100%;
     top: 0;
     left: 0;
-    z-index: -1;
+    z-index: -2;
   }
 
   &::after {
@@ -200,7 +200,7 @@ body {
         rgba(#0D1B2A, 0) 25%,
         rgba(#0D1B2A, 0) 75%,
         rgba(#0D1B2A, 1) 100%);
-    z-index: -1;
+    z-index: -2;
   }
 }
 
