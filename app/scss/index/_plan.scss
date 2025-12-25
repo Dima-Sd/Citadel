@@ -82,24 +82,24 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url('../images/plans/robotTrial.webp');
+            background-image: url('../images/plans/Roboto.TrialPeriod.png');
             transition: transform 0.5s;
             pointer-events: none;
         }
 
         &--monthly::before {
           pointer-events: none;
-            background-image: url('../images/plans/robotMonthly.webp');
+            background-image: url('../images/plans/robotMonthly.png');
         }
 
         &--semiannual::before {
           pointer-events: none;
-            background-image: url('../images/plans/robotSemiannual.webp');
+            background-image: url('../images/plans/robotSemiannual.png');
         }
 
         &--annual::before {
           pointer-events: none;
-            background-image: url('../images/plans/robotAnnual.webp');
+            background-image: url('../images/plans/robotAnnual.png');
         }
 
     }

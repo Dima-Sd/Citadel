@@ -11,7 +11,15 @@
 }
 
 .map-flag {
-  visibility: hidden;
+ // visibility: hidden;
+ transform-box: fill-box;
+ transform-origin: center;
+ transition: transform 0.3s ease;
+ &~g{
+    transform-box: fill-box;
+    transform-origin: center;
+    transition: transform 0.3s ease;
+ }
 }
 
 .map-flag.is-active {
@@ -42,6 +50,15 @@
   }
 }
 
+@media (max-width: 992px) {
+  .map-flag {
+    transform: scale(1.62);
+
+    &~g {
+      transform: scale(1.62);
+    }
+  }
+}
 @media (max-width: 440px) {
   .map {
     &__title {
@@ -51,4 +68,12 @@
       padding: 0;
     }
   }
+  .map-flag {
+    transform: scale(1.6);
+
+    &~g {
+      transform: scale(2.0);
+    }
+  }
 }
+

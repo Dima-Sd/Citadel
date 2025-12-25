@@ -237,7 +237,7 @@ body {
   padding: 20px 32px;
   position: relative;
   z-index: 2;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, inset .3s;
 
   &::after {
     content: "";
@@ -253,6 +253,7 @@ body {
     -webkit-mask-composite: xor;
     mask-composite: exclude;
     will-change: inset;
+    transition: box-shadow 0.3s, inset 0.3s;
   }
 
   &::before {
@@ -264,17 +265,19 @@ body {
     box-shadow: 0 -6px 10px $light-opacity-23 inset,
       0 4px 34px $light-900-opacity-34;
     z-index: -1;
-    transition: box-shadow 0.3s, width 0.3s, height 0.3s, inset 0.3s;
+    transition: box-shadow 0.3s, inset 0.3s;
     will-change: inset;
   }
 
   &:hover {
+    transition: box-shadow 0.3s, inset 0.3s;
     &::before {
       box-shadow: 0 -6px 10px $light-opacity-23 inset,
         0 4px 34px $light-900-opacity-64;
       inset: 6px 6px;
     }
     &::after {
+      transition: inset 0.3s;
       will-change: inset;
       inset: -2px;
     }
@@ -317,7 +320,7 @@ body {
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   z-index: 2;
-  transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s, inset .3s;
   padding: 24px;
 
   &::after {
