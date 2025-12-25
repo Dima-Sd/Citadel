@@ -59,14 +59,16 @@
 
         &:hover {
             transform: translateY(-6px);
+            transition: opacity 0.5s, transform 0.5s, top 0.5s;
 
             &::before {
                 transform: translateX(-50%) translateY(-6px);
             }
 
             .plan__circle {
-                transform: translateX(-50%) translateY(0);
-                opacity: 1;
+              top: -70px;
+              opacity: 1;
+              transition: opacity 0.5s, transform 0.5s, top 0.5s;
             }
         }
 
@@ -117,18 +119,26 @@
 
     &__circle {
         position: absolute;
-        top: 25px;
+        top: -17px;
         left: 50%;
         transform: translateX(-50%) translateY(30px);
+        border-radius: 50%;
+/*         
         width: 100px;
         height: 100px;
         border-radius: 50%;
         background-color: rgba(61, 220, 132);
         -webkit-filter: blur(94px);
-        filter: blur(45px);
+        filter: blur(45px); */
+        background-image: url('../images/plan-circle.webp');
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:  300px;
+        height: 300px;
         z-index: -1;
         opacity: 0.7;
-        transition: opacity 0.5s, transform 0.5s;
+        transition: opacity 0.5s, transform 0.5s, top 0.5s;
     }
 
     &__item.blur-plate {
