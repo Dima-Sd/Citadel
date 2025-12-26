@@ -55,7 +55,7 @@
         position: relative;
         transition: transform 0.5s;
         flex: 0 0 279px;
-       isolation: isolate;
+        isolation: isolate;
 
         &:hover {
             transform: translateY(-6px);
@@ -66,9 +66,9 @@
             }
 
             .plan__circle {
-              top: -70px;
-              opacity: 1;
-              transition: opacity 0.5s, transform 0.5s, top 0.5s;
+                top: -70px;
+                opacity: 1;
+                transition: opacity 0.5s, transform 0.5s, top 0.5s;
             }
         }
 
@@ -84,26 +84,50 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url('../images/plans/Roboto.TrialPeriod.png');
+            background-image: url('../images/plans/robotTrial.png');
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url('../images/plans/robotTrial-2x.png');
+            }
+
             transition: transform 0.5s;
             pointer-events: none;
         }
 
         &--monthly::before {
-          pointer-events: none;
+            pointer-events: none;
             background-image: url('../images/plans/robotMonthly.png');
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url('../images/plans/robotMonthly-2x.png');
+            }
         }
 
         &--semiannual::before {
-          pointer-events: none;
+            pointer-events: none;
             background-image: url('../images/plans/robotSemiAnnual.png');
+
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url('../images/plans/robotSemiAnnual-2x.png');
+            }
         }
 
         &--annual::before {
-          pointer-events: none;
+            pointer-events: none;
             background-image: url('../images/plans/robotAnnual.png');
-        }
 
+            @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+                background-image: url('../images/plans/robotAnnual-2x.png');
+            }
+        }
     }
 
     &__item {
@@ -123,7 +147,7 @@
         left: 50%;
         transform: translateX(-50%) translateY(30px);
         border-radius: 50%;
-/*         
+        /*         
         width: 100px;
         height: 100px;
         border-radius: 50%;
@@ -134,7 +158,7 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-        width:  300px;
+        width: 300px;
         height: 300px;
         z-index: -1;
         opacity: 0.7;
@@ -183,8 +207,8 @@
         font-size: 32px;
         margin-bottom: 12px;
         @include RobotoCondensed-600;
-       // font-weight: 600;
-       // font-family: "Roboto Condensed", sans-serif;
+        // font-weight: 600;
+        // font-family: "Roboto Condensed", sans-serif;
     }
 
     &__price {
@@ -279,41 +303,45 @@
         }
     }
 }
+
 @media (max-width: 1240px) {
-  .plan {
-    &__item-wrapper {
-      max-width: 340px;
-      flex: 0 0 340px;
+    .plan {
+        &__item-wrapper {
+            max-width: 340px;
+            flex: 0 0 340px;
+        }
     }
-  }
 }
 
 @media (max-width: 992px) {
-  .plan {
-    &::before {
-      background-position: center bottom;
-      height: 50%;
-      top: auto;
-      left: 0;
-      bottom: -100px;
+    .plan {
+        &::before {
+            background-position: center bottom;
+            height: 50%;
+            top: auto;
+            left: 0;
+            bottom: -100px;
+        }
     }
-  }
 }
+
 @media (max-width: 440px) {
     .plan {
-      &::before {
-        height: 50%;
-        top: auto;
-        bottom: 0;
-        left: 0;
-        bottom: 0;
-      }
-      &__item-wrapper {
-        width: 100%;
-      }
-      &__item {
-          max-width: 100%;
-          width: 100%;
-      }
+        &::before {
+            height: 50%;
+            top: auto;
+            bottom: 0;
+            left: 0;
+            bottom: 0;
+        }
+
+        &__item-wrapper {
+            width: 100%;
+        }
+
+        &__item {
+            max-width: 100%;
+            width: 100%;
+        }
     }
 }
