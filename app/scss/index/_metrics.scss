@@ -7,22 +7,21 @@
     justify-content: center;
   }
 
-  .metrics {
-    &__badge-box {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 9px;
-      margin-bottom: 16px;
-      padding: 6px 14px 6px 12px;
+  &__badge-box {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 16px;
+    padding: 6px 14px 6px 12px;
 
-      &.blur-plate {
-        &::after {
-          background: linear-gradient(10.35deg, rgba(255, 255, 255, 0) 60.32%, $light 94.79%), linear-gradient(200.43deg, rgba(255, 255, 255, 0) 65.44%, rgba(255, 255, 255, 0.6) 100%);
-        }
+    &.blur-plate {
+      &::after {
+        background: linear-gradient(10.35deg, rgba(255, 255, 255, 0) 60.32%, $light 94.79%), linear-gradient(200.43deg, rgba(255, 255, 255, 0) 65.44%, rgba(255, 255, 255, 0.6) 100%);
       }
     }
   }
+ 
 
   &__badge {
     @include Inter-700;
@@ -95,12 +94,6 @@
       width: 268px;
       height: 268px;
     }
-
-    .metric-canvas {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
   }
 
   &--download {
@@ -111,30 +104,33 @@
       width: 332px;
       height: 332px;
     }
-
-    .metric-canvas {
-      width: 100%;
-      height: 100%;
-      display: block;
-    }
   }
 
   .progress-ring {
- /*    background-image: url('../images/download-bg.svg');
+    
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; */
-
-    &__bg {
-      fill: rgba(255, 255, 255, 0.2);
+    background-size: cover;
+    &--upload {
+      background-image: url('../images/upload-bg.svg');
+    }
+    &--download {
+      background-image: url('../images/download-bg.svg');
+    }
+    &--latency {
+      background-image: url('../images/latency-bg.svg');
     }
 
-    &__value {
-      fill: $light-900;
-      stroke-dasharray: 1000; // подбирается
-      stroke-dashoffset: 1000;
-      transition: stroke-dashoffset .8s ease;
-    }
+  }
+  &__bg {
+    fill: rgba(255, 255, 255, 0.2);
+  }
+
+  &__value {
+    fill: $light-900;
+    stroke-dasharray: 1000; // подбирается
+    stroke-dashoffset: 1000;
+    transition: stroke-dashoffset .8s ease;
   }
 
   &__label {
@@ -203,7 +199,7 @@
   }
 
   .metric-card {
-
+    
     &--upload,
     &--latency {
       width: 212px;
@@ -223,6 +219,22 @@
         width: 226px;
         height: 226px;
       }
+    }
+
+  .progress-ring {
+  
+      &--upload {
+        background-image: url('../images/upload-bg-m.svg');
+      }
+  
+      &--download {
+        background-image: url('../images/download-bg-m.svg');
+      }
+  
+      &--latency {
+        background-image: url('../images/latency-bg-m.svg');
+      }
+  
     }
 
     &__icon {
@@ -400,6 +412,21 @@
       .metric-card__value {
         margin-bottom: 0;
       }
+    }
+    .progress-ring {
+
+      &--upload {
+        background-image: url('../images/upload-bg-s.svg');
+      }
+
+      &--download {
+        background-image: url('../images/download-bg-s.svg');
+      }
+
+      &--latency {
+        background-image: url('../images/latency-bg-s.svg');
+      }
+
     }
   }
 }

@@ -158,129 +158,9 @@ accordeons.forEach(item => {
   };
 
 
-/*   const drawAnimatedRing = canvas => {
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  if (!ctx) return;
-
-  const percent = Number(canvas.dataset.progress || 0) / 100;
-  const color = canvas.dataset.color || '#3DDC84';
-
-  const size = canvas.clientWidth;
-  const dpr = window.devicePixelRatio || 1;
-
-  canvas.width = size * dpr;
-  canvas.height = size * dpr;
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-  const center = size / 2;
-
-  // ВАЖНО: проверка класса родителя
-  const isDownload = canvas.closest('.metrics__cards-item--download');
-  const lineWidth = isDownload ? 14 : 10;
-
-  const radius = center - lineWidth / 2;
-
-  let current = 0;
-
-  const animate = () => {
-    ctx.clearRect(0, 0, size, size);
-    ctx.beginPath();
-    ctx.strokeStyle = color;
-    ctx.lineWidth = lineWidth;
-    ctx.lineCap = 'round';
-    ctx.arc(
-      center,
-      center,
-      radius,
-      -Math.PI / 2,
-      -Math.PI / 2 + Math.PI * 2 * current
-    );
-    ctx.stroke();
-
-    if (current < percent) {
-      current += 0.015;
-      requestAnimationFrame(animate);
-    }
-  };
-
-  animate();
-};
- */
-
-const drawAnimatedRing = canvas => {
-  if (!canvas) return;
-  const ctx = canvas.getContext('2d');
-  if (!ctx) return;
-
-  const percent = Number(canvas.dataset.progress || 0) / 100;
-  const color = canvas.dataset.color || '#3DDC84';
-
-  const size = canvas.clientWidth;
-  const dpr = window.devicePixelRatio || 1;
-
-  canvas.width = size * dpr;
-  canvas.height = size * dpr;
-  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-  const center = size / 2;
-
-  const lineWidth = canvas.closest('.metrics__cards-item--download')
-    ? 12
-    : 8;
-
-  const radius = center - lineWidth;
-
-  // === ГРАДИЕНТ ПОДЛОЖКИ ===
-  const bgGradient = ctx.createLinearGradient(0, 0, size, size);
-  bgGradient.addColorStop(0, 'rgba(255,255,255,0.18)');
-  bgGradient.addColorStop(0.57, 'rgba(255,255,255,0.03)');
-  bgGradient.addColorStop(1, 'rgba(255,255,255,0.12)');
-
-  let current = 0;
-
-  const animate = () => {
-    ctx.clearRect(0, 0, size, size);
-
-    // ФОН (подложка)
-    ctx.beginPath();
-    ctx.strokeStyle = bgGradient;
-    ctx.lineWidth = lineWidth;
-    ctx.lineCap = 'round';
-    ctx.arc(center, center, radius, 0, Math.PI * 2);
-    ctx.stroke();
-
-    // АКТИВНОЕ КОЛЬЦО
-    ctx.beginPath();
-    ctx.strokeStyle = color;
-    ctx.lineWidth = lineWidth;
-    ctx.lineCap = 'round';
-    ctx.arc(
-      center,
-      center,
-      radius,
-      -Math.PI / 2,
-      -Math.PI / 2 + Math.PI * 2 * current
-    );
-    ctx.stroke();
-
-    if (current < percent) {
-      current += 0.015;
-      requestAnimationFrame(animate);
-    }
-  };
-
-  animate();
-};
-
-
   const metricsObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
-
-      entry.target
-        .querySelectorAll('.metric-canvas')
-        .forEach(drawAnimatedRing);
 
       animateNumbers(entry.target.querySelectorAll('[data-activeNum]'));
       metricsObserver.unobserve(entry.target);
@@ -308,7 +188,7 @@ const drawAnimatedRing = canvas => {
           el: '.swiper-pagination',
         },
         breakpoints: {
-          320: { slidesPerView: 1.2, spaceBetween: 16 },
+          320: { slidesPerView: 1.08, spaceBetween: 16 },
           767: { slidesPerView: 2, spaceBetween: 24 },
           1180: { slidesPerView: 3, spaceBetween: 24 },
         },

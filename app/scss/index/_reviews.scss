@@ -300,6 +300,9 @@
 
 @media (max-width: 576px) {
   .reviews {
+    .review-card__inner {
+      padding: 20px;
+    }
     &__stat {
       max-width: 100px;
     }

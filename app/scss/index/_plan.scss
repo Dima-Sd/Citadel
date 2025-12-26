@@ -324,7 +324,14 @@
         }
     }
 }
-
+@media (max-width: 767px) {
+  .plan {
+    &__item-wrapper {
+      max-width: 360px;
+      flex: 0 0 360px;
+    }
+  }
+}
 @media (max-width: 440px) {
     .plan {
         &::before {
