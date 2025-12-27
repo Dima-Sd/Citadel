@@ -92,6 +92,16 @@
                 background-image: url('../images/plans/robotTrial-2x.png');
             }
 
+            @supports (background-image: url("data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEALmk0mk0iIiIiIgBoSygA")) {
+                background-image: url('../images/plans/robotTrial.webp');
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url('../images/plans/robotTrial-2x.webp');
+                }
+            }
+
             transition: transform 0.5s;
             pointer-events: none;
         }
@@ -105,6 +115,16 @@
             (min-resolution: 2dppx) {
                 background-image: url('../images/plans/robotMonthly-2x.png');
             }
+
+            @supports (background-image: url("data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEALmk0mk0iIiIiIgBoSygA")) {
+                background-image: url('../images/plans/robotMonthly.webp');
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url('../images/plans/robotMonthly-2x.webp');
+                }
+            }
         }
 
         &--semiannual::before {
@@ -116,6 +136,16 @@
             (min-resolution: 2dppx) {
                 background-image: url('../images/plans/robotSemiAnnual-2x.png');
             }
+
+            @supports (background-image: url("data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEALmk0mk0iIiIiIgBoSygA")) {
+                background-image: url('../images/plans/robotSemiAnnual.webp');
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url('../images/plans/robotSemiAnnual-2x.webp');
+                }
+            }
         }
 
         &--annual::before {
@@ -126,6 +156,16 @@
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
                 background-image: url('../images/plans/robotAnnual-2x.png');
+            }
+
+            @supports (background-image: url("data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEALmk0mk0iIiIiIgBoSygA")) {
+                background-image: url('../images/plans/robotAnnual.webp');
+
+                @media (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                    background-image: url('../images/plans/robotAnnual-2x.webp');
+                }
             }
         }
     }
@@ -324,14 +364,16 @@
         }
     }
 }
+
 @media (max-width: 767px) {
-  .plan {
-    &__item-wrapper {
-      max-width: 360px;
-      flex: 0 0 360px;
+    .plan {
+        &__item-wrapper {
+            max-width: 360px;
+            flex: 0 0 360px;
+        }
     }
-  }
 }
+
 @media (max-width: 440px) {
     .plan {
         &::before {
