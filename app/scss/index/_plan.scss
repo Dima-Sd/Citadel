@@ -84,21 +84,21 @@
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
-            background-image: url('../images/plans/robotTrial.png');
+            background-image: url('../images/plans/robot-trial.png');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../images/plans/robotTrial-2x.png');
+                background-image: url('../images/plans/robot-trial-2x.png');
             }
 
             @supports (background-image: url("data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEALmk0mk0iIiIiIgBoSygA")) {
-                background-image: url('../images/plans/robotTrial.webp');
+                background-image: url('../images/plans/robot-trial.webp');
 
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url('../images/plans/robotTrial-2x.webp');
+                    background-image: url('../images/plans/robot-trial-2x.webp');
                 }
             }
 
@@ -108,63 +108,63 @@
 
         &--monthly::before {
             pointer-events: none;
-            background-image: url('../images/plans/robotMonthly.png');
+            background-image: url('../images/plans/robot-monthly.png');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../images/plans/robotMonthly-2x.png');
+                background-image: url('../images/plans/robot-monthly-2x.png');
             }
 
             @supports (background-image: url("data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEALmk0mk0iIiIiIgBoSygA")) {
-                background-image: url('../images/plans/robotMonthly.webp');
+                background-image: url('../images/plans/robot-monthly.webp');
 
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url('../images/plans/robotMonthly-2x.webp');
+                    background-image: url('../images/plans/robot-monthly-2x.webp');
                 }
             }
         }
 
         &--semiannual::before {
             pointer-events: none;
-            background-image: url('../images/plans/robotSemiAnnual.png');
+            background-image: url('../images/plans/robot-semi-annual.png');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../images/plans/robotSemiAnnual-2x.png');
+                background-image: url('../images/plans/robot-semi-annual-2x.png');
             }
 
             @supports (background-image: url("data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEALmk0mk0iIiIiIgBoSygA")) {
-                background-image: url('../images/plans/robotSemiAnnual.webp');
+                background-image: url('../images/plans/robot-semi-annual.webp');
 
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url('../images/plans/robotSemiAnnual-2x.webp');
+                    background-image: url('../images/plans/robot-semi-annual-2x.webp');
                 }
             }
         }
 
         &--annual::before {
             pointer-events: none;
-            background-image: url('../images/plans/robotAnnual.png');
+            background-image: url('../images/plans/robot-annual.png');
 
             @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                background-image: url('../images/plans/robotAnnual-2x.png');
+                background-image: url('../images/plans/robot-annual-2x.png');
             }
 
             @supports (background-image: url("data:image/webp;base64,UklGRiIAAABXRUJQVlA4IBYAAAAwAQCdASoBAAEALmk0mk0iIiIiIgBoSygA")) {
-                background-image: url('../images/plans/robotAnnual.webp');
+                background-image: url('../images/plans/robot-annual.webp');
 
                 @media (min-device-pixel-ratio: 2),
                 (min-resolution: 192dpi),
                 (min-resolution: 2dppx) {
-                    background-image: url('../images/plans/robotAnnual-2x.webp');
+                    background-image: url('../images/plans/robot-annual-2x.webp');
                 }
             }
         }
